@@ -1,0 +1,58 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/** styles for the entire app **/
+
+ion-footer {
+  margin: 0px;
+}
+ion-footer p {
+  color: #9c9ea1;
+}
+ion-footer a {
+  color: white;
+  text-decoration: none;
+}
+a {
+  color: #F09217;
+}
+.eventName {
+  font-size: 1em;
+}
+.eventLocation {
+  font-size: .75em;
+}
+.eventTime {
+  background-color: #707070;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ion-menu-button {
+  color: white;
+}
+ion-toolbar {
+  --color: white !important;
+  --background: black !important;
+}
+ion-searchbar {
+  --background: white !important;
+}
+#whole {
+  padding: 10px 0px 0px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
