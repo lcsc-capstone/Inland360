@@ -23,7 +23,10 @@ const routes: Routes = [
   { path: 'import-calendar', loadChildren: './import-calendar/import-calendar.module#ImportCalendarPageModule' },
   { path: 'snaps-home', loadChildren: './snaps-home/snaps-home.module#SnapsHomePageModule' },
   { path: 'snaps-upload', loadChildren: './snaps-upload/snaps-upload.module#SnapsUploadPageModule' },
-  { path: 'snaps-list', loadChildren: './snaps-list/snaps-list.module#SnapsListPageModule' }
+  { path: 'snaps-list', loadChildren: './snaps-list/snaps-list.module#SnapsListPageModule' },
+  { path: 'snaps-new-account', loadChildren: './snaps-new-account/snaps-new-account.module#SnapsNewAccountPageModule' },
+  { path: 'login-forgot-password', loadChildren: './login-forgot-password/login-forgot-password.module#LoginForgotPasswordPageModule' },
+  { path: 'login-new-password', loadChildren: './login-new-password/login-new-password.module#LoginNewPasswordPageModule' }
 ];
 
 @NgModule({
