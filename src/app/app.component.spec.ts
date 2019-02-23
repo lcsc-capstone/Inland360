@@ -48,7 +48,7 @@ describe('AppComponent', () => {
     const fixture = await TestBed.createComponent(AppComponent);
     await fixture.detectChanges();
     const app = fixture.nativeElement;
-    const menuItems = app.querySelectorAll('ion-label');
+    const menuItems = app.querySelectorAll('label');
     expect(menuItems.length).toEqual(2);
     expect(menuItems[0].textContent).toContain('Home');
     expect(menuItems[1].textContent).toContain('List');
