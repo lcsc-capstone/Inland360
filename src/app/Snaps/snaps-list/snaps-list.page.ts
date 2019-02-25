@@ -11,7 +11,7 @@ export class SnapsListPage implements OnInit {
 
   private data = [
     {path: "snaps-home", icon: "flask", title: "Snaps main page"},
-    {path: "snaps-upload", icon: "wifi", title: "Upload a photo"},
+    {path: "snaps-upload", icon: "wifi", title: "Upload a photo"}
   ];
 
   private icons = [
