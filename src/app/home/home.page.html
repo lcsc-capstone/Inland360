@@ -17,18 +17,37 @@
 
   <main>
     <div>
-      <ion-img src="../../assets/openMicNight.jpg" alt="main image placeholder" id ="mainImg"></ion-img>
-      <h2>Events Calendar</h2>
-      <p>Pullman’s longest running open mic.  We welcome all talents and skill levels.  Sign ups start at 9 pm</p>
-      <p>View more</p>
-      <br>
-      <p>Have a way to add events to user's device</p>
-      <p>Make this into an Events slider (like Inland 360s home page)</p>
+      <h1>Upcomming Events</h1>
       <p>https://www.spingo.com/submit/?partnerId=2257</p>
-
-      <br>
-
-      <p><a href="../event-a/event-a.module#EventAPageModule'">Go to the event page?</a></p>
+        <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide>
+                <div>
+                    <ion-img src="../../assets/openMicNight.jpg" alt="main image placeholder" id="mainImg"></ion-img>
+                    <h2>Open mic</h2>
+                    <p>Pullman</p>
+                    <p>9:00 pm</p>
+                    <p><ion-item [routerLink]="'/event-home'" routerDirection="forward">Go to the event page?</ion-item></p>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div>
+                    <ion-img src="../../assets/openMicNight.jpg" alt="main image placeholder" id ="mainImg"></ion-img>
+                    <h2>Intuitive Eating Program</h2>
+                    <p>Moscow-Pullman</p>
+                    <p>9:00 pm</p>
+                    <p><ion-item [routerLink]="'/event-home'" routerDirection="forward">Go to the event page?</ion-item></p>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div>
+                    <ion-img src="../../assets/Reid.jpg" alt="main image placeholder" id ="mainImg"></ion-img>
+                    <h2>U of I Faculty Recital - James Reid, guitar</h2>
+                    <p>Moscow-Pullman</p>
+                    <p>9:00 pm</p>
+                    <p><ion-item [routerLink]="'/event-home'" routerDirection="forward">Go to the event page?</ion-item></p>
+                </div>
+            </ion-slide>
+          </ion-slides>
     </div>
     <div>
       <ion-img src="https://s3.amazonaws.com/FringeBucket/image_placeholder.png" alt="main image placeholder" id ="mainImg"></ion-img>

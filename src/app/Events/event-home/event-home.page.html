@@ -24,19 +24,18 @@
     <div class="styleA">
       <h2 class="date">Monday 28, 2019</h2>
 
-      <div class="event">
-        <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
-        <a href="#">
-        <p class="eventTime">9:00 pm</p>
-        <h3 class="eventName">Open mic</h3>
-        <p class="eventLocation">Moscow-Pullman</p>
-        <section class="eventDescription">
-          <p>Pullman’s longest running open mic.  We welcome all talents and skill levels.  Sign ups start at 9 pm</p>
-        </section>
-        <p class="eventPrice">Price: Free</p>
-        </a>
-      </div>
-       
+      <ion-item [routerLink]="'/event-info'" routerDirection="forward">
+        <div class="event">
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">9:00 pm</p>
+          <h3 class="eventName">Open mic</h3>
+          <p class="eventLocation">Moscow-Pullman</p>
+          <section class="eventDescription">
+            <p>Pullman’s longest running open mic.  We welcome all talents and skill levels.  Sign ups start at 9 pm</p>
+          </section>
+          <p class="eventPrice">Price: Free</p>
+        </div>
+      </ion-item>
     </div>
 
     <div class="styleA">

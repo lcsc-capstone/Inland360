@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'snaps-list', loadChildren: './Snaps/snaps-list/snaps-list.module#SnapsListPageModule' },
   { path: 'snaps-new-account', loadChildren: './Login/snaps-new-account/snaps-new-account.module#SnapsNewAccountPageModule' },
   { path: 'login-forgot-password', loadChildren: './Login/login-forgot-password/login-forgot-password.module#LoginForgotPasswordPageModule' },
-  { path: 'login-new-password', loadChildren: './Login/login-new-password/login-new-password.module#LoginNewPasswordPageModule' }
+  { path: 'login-new-password', loadChildren: './Login/login-new-password/login-new-password.module#LoginNewPasswordPageModule' },
 ];
 
 @NgModule({

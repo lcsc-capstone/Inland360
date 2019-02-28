@@ -1,17 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { HttpHeaders } from '@angular/common/http';
+import * as xml2js from "xml2js";
 
 @Injectable({
   providedIn: 'root'
+
 })
 export class EventsDataService {
   
-  loadXML()
+  public loadXML()
     {
-        this.http.get('/assets/data/events.xml',
+      this.http.get('/assets/data/events.xml',
       {
-        // headers: new HttpHeaders()
+        //headers: new HttpHeaders()
         // .set('Content-Type', 'text/xml')
         // .append('Access-Control-Allow-Methods', 'GET')
         // .append('Access-Control-Allow-Origin', '*')
@@ -26,6 +28,9 @@ export class EventsDataService {
         //     this.xmlItems = data;
         //  });
         console.log(data);
+      }, (err) =>
+      {
+        console.log(err);
       });
     }
 
