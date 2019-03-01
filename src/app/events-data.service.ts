@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 //import { Http } from '@angular/http';
-//import { HttpHeaders } from '@angular/common/http';
 import { NavController } from '@ionic/angular';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
-import 'rxjs/add/operator/map';
+//import { map } from 'rxjs/operators';
+//import { setTimeout } from 'timers';
 //import xml2js from 'xml2js';
 import * as xml2js from "xml2js";
 
@@ -17,7 +17,7 @@ export class EventsDataService {
 
   ionViewWillEnter()
   {
-      this.loadXML();
+      //this.loadXML();
   }
 
   public loadXML()
@@ -49,9 +49,6 @@ export class EventsDataService {
       return new Promise(resolve =>
       {
          var e,
-         
-         
-
              arr    = [],
              parser = new xml2js.Parser(
              {
@@ -75,9 +72,6 @@ export class EventsDataService {
                   id : item.id[0],
                   image : item.image[0],  
                });
-              {
-
-              }
             }
 
             resolve(arr);

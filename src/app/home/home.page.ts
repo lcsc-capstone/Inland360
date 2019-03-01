@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { EventsDataService } from '../events-data.service';
+//import { AnyAaaaRecord } from 'dns';
+module.exports = require("readable-stream");
 
 @Component({
   selector: 'app-home',
@@ -37,7 +40,9 @@ export class HomePage implements OnInit{
     'build'
   ];
   public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
+  public eventsxmldata: any;
+
+  constructor(public eventservice: EventsDataService) {
     for (let i = 0; i < this.pages.length; i++) {
       this.items.push({
         title: this.pages[i],
@@ -45,6 +50,8 @@ export class HomePage implements OnInit{
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
+    this.eventsxmldata = this.eventservice.xmlItems;
+    console.log(this.eventsxmldata);
   }
 
 
