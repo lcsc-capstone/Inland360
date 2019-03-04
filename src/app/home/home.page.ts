@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EventsDataService } from '../events-data.service';
 //import { AnyAaaaRecord } from 'dns';
-module.exports = require("readable-stream");
+//module.exports = require("readable-stream");
 
 @Component({
   selector: 'app-home',
@@ -50,8 +50,10 @@ export class HomePage implements OnInit{
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
+    this.eventservice.loadXML();
     this.eventsxmldata = this.eventservice.xmlItems;
-    console.log(this.eventsxmldata);
+    //console.log(this.eventservice.xmlItems);
+    //console.log(this.eventservice.arr);
   }
 
 
