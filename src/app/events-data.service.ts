@@ -8,6 +8,7 @@ import { HttpHeaders } from '@angular/common/http';
 //import xml2js from 'xml2js';
 import * as xml2js from "xml2js";
 import { isBoolean, isString, isArray } from 'util';
+import { XSRF_HEADER_NAME } from '@angular/common/http/src/xsrf';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,7 @@ export class EventsDataService {
   public loadXML()
     {
       console.log("Starting loadXML()...");
-      this.http.get('/assets/data/Events copy.xml',
+      this.http.get('/assets/data/Event.xml',
       {
         headers: new HttpHeaders()
          .set('Content-Type', 'text/xml')
@@ -37,7 +38,9 @@ export class EventsDataService {
         .then((data)=>
         {
             console.log("Adding parsed data to xmlItems");
+            console.log(data);
             this.xmlItems = data;
+            console.log(this.xmlItems);
         });
       }, (err) =>
       {
@@ -60,7 +63,7 @@ export class EventsDataService {
           var c;   
           parser.parseString(data, function (err, result)
           {
-            var obj = result.root.events[0];
+            /*var obj = result.root.events[0];
             for(e in obj.event)
             {
               var item = obj.event[e];
@@ -76,6 +79,30 @@ export class EventsDataService {
               console.log("this.arr");
               console.log(arr);
             }
+            */
+              console.log("starting?");
+              var event = result.rss.channel[0].item;
+              var count = 1;
+              for(var n in event)
+              {
+                arr[count] = [];
+                arr[count][0] = event[n].title[0];
+                arr[count][1] = event[n].description[0];
+                //arr[n][0] = event[n]."fn:artist"[0];
+                //arr[n][0][0] = event[n][3][0];
+                //for(var i in event.n)
+                // {
+                //   //arr[n][0]=event[n][i][0];
+                // }
+                count++;
+              }
+              console.log(arr);
+              /*
+              var item = obj.item;
+              arr[e] = [];
+              arr[e][0] = item.title[0];
+              arr[e][1] = item.description[0];
+              */
           }); 
           resolve();
       });
