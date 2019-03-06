@@ -5,7 +5,6 @@ import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 //import { map } from 'rxjs/operators';
 //import { setTimeout } from 'timers';
-//import xml2js from 'xml2js';
 import * as xml2js from "xml2js";
 import { isBoolean, isString, isArray } from 'util';
 import { XSRF_HEADER_NAME } from '@angular/common/http/src/xsrf';
@@ -53,6 +52,8 @@ export class EventsDataService {
    {
      return new Promise((resolve, reject) =>
      {
+          //
+          //const XmlElement = require('xml2js-extra');
           var arr: Array<any> = [];
           var e,
           parser = new xml2js.Parser(
@@ -81,14 +82,25 @@ export class EventsDataService {
             }
             */
               console.log("starting?");
-              var event = result.rss.channel[0].item;
-              var count = 1;
-              for(var n in event)
+              var events = result.rss.channel[0].item;
+              var count = 0;
+              console.log(events);
+              for(var event in events)
               {
-                arr[count] = [];
-                arr[count][0] = event[n].title[0];
-                arr[count][1] = event[n].description[0];
-                //arr[n][0] = event[n]."fn:artist"[0];
+                //console.log("Event is: " + event);
+                //console.log("Count is: " + count);
+                //console.log("Object.keys(event) is:" + Object.keys(event));
+                //const tag = Object.keys(event)[count];
+                //console.log("Objet.keys(event)[count] is: " + tag);
+                //const xmlElement = new XmlElement(tag, event[tag]);
+                // console.log(xmlElement);
+                // console.log('Testing...');
+                // //console.log(xmlElement.getChildren('fn:artist'));
+                // console.log("Test ran...?");
+                // arr[count] = [];
+                // arr[count][0] = events[event].title[0];
+                // arr[count][1] = events[event].description[0];
+                //arr[count][0] = event[count].getChildren('fn:artist')[0];
                 //arr[n][0][0] = event[n][3][0];
                 //for(var i in event.n)
                 // {
