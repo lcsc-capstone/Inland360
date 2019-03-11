@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlnsfn="https//www.publishwithfoundation.com/rss/2.0">
+  <channel>
+    <title>Example Event Feed</title>
+    <link>https://www.example.net</link>
+    <description>Demonstration of different kinds of events as output by the Foundation event feed.</description>
+
+      <item>
+        <fnoid>3736301</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+
+        <title>Example: All Fields Populated</title>
+        <fntitle>Example: All Fields Populated</fntitle>
+
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+
+
+
+        <description>Example Description</description>
+
+        <fndescription>Example Description</fndescription>
+
+
+          <fnartist>Example Artist</fnartist>
+
+        <fnprice>Example Price</fnprice>
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736291</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736292</fncategory_oid>
+          </fnevent_category>
+
+
+
+          <fnfeature>Staff Pick</fnfeature>
+
+          <fnfeature>Members Pick</fnfeature>
+
+          <fnfeature>Tickets Available</fnfeature>
+
+        <fnsort_time>
+          04:01:00 AM
+        </fnsort_time>
+
+        <fndisplay_time>
+          Mondays, 4:01 a.m. Continues through May 6
+        </fndisplay_time>
+
+
+
+
+        <fnlocation>
+          <fnoid>3318313</fnoid>
+          <fnname>DesertNet</fnname>
+          <fnaddress>202 S. Tucson Blvd.</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Tucson</fncity>
+          <fnstate>AZ</fnstate>
+          <fnpostal_code>85716</fnpostal_code>
+          <fnneighborhood_group>Tucson</fnneighborhood_group>
+          <fnneighborhood>West</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude>32.22022</fnlatitude>
+          <fnlongitude>-110.93576</fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+
+
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+
+
+        <fnposition>1</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+
+
+        <fnposition>2</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+
+
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+
+        <fnsort_title>Example All Fields Populated</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+
+
+          <fntags>test</fntags>
+
+          <fntags>example</fntags>
+
+
+
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+
+      <item>
+        <fnoid>3736293</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+
+        <title>Example: No Date</title>
+        <fntitle>Example: No Date</fntitle>
+
+        <link>https://www.example.net/tucson/example-no-date/Event?oid=3736293</link>
+
+
+
+        <description></description>
+
+        <fndescription></fndescription>
+
+
+        <fnprice></fnprice>
+        <fnphone></fnphone>
+        <fnurl></fnurl>
+
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736291</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736292</fncategory_oid>
+          </fnevent_category>
+
+
+
+        <fnsort_time>
+
+        </fnsort_time>
+
+        <fndisplay_time>
+
+        </fndisplay_time>
+
+
+
+
+
+
+
+
+        <fnlocation>
+          <fnoid>3318313</fnoid>
+          <fnname>DesertNet</fnname>
+          <fnaddress>202 S. Tucson Blvd.</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Tucson</fncity>
+          <fnstate>AZ</fnstate>
+          <fnpostal_code>85716</fnpostal_code>
+          <fnneighborhood_group>Tucson</fnneighborhood_group>
+          <fnneighborhood>West</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude>32.22022</fnlatitude>
+          <fnlongitude>-110.93576</fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+
+
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+
+
+        <fnposition>1</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+
+
+        <fnposition>2</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+
+
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+
+        <fnsort_title>Example No Date</fnsort_title>
+        <fnticket_url></fnticket_url>
+
+
+
+
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736294</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+
+        <title>Example: Single Day</title>
+        <fntitle>Example: Single Day</fntitle>
+
+        <link>https://www.example.net/tucson/example-single-day/Event?oid=3736294</link>
+
+
+
+        <description></description>
+
+        <fndescription></fndescription>
+
+
+        <fnprice></fnprice>
+        <fnphone></fnphone>
+        <fnurl></fnurl>
+
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736291</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736292</fncategory_oid>
+          </fnevent_category>
+
+
+
+        <fnsort_time>
+          n/a
+        </fnsort_time>
+
+        <fndisplay_time>
+          Mon., April 1
+        </fndisplay_time>
+
+
+
+
+
+
+
+
+        <fnlocation>
+          <fnoid>3318313</fnoid>
+          <fnname>DesertNet</fnname>
+          <fnaddress>202 S. Tucson Blvd.</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Tucson</fncity>
+          <fnstate>AZ</fnstate>
+          <fnpostal_code>85716</fnpostal_code>
+          <fnneighborhood_group>Tucson</fnneighborhood_group>
+          <fnneighborhood>West</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude>32.22022</fnlatitude>
+          <fnlongitude>-110.93576</fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+
+
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+
+
+        <fnposition>1</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+
+
+        <fnposition>2</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+
+
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+
+        <fnsort_title>Example Single Day</fnsort_title>
+        <fnticket_url></fnticket_url>
+
+
+
+
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736295</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+
+        <title>Example: Single Day with Time</title>
+        <fntitle>Example: Single Day with Time</fntitle>
+
+        <link>https://www.example.net/tucson/example-single-day-with-time/Event?oid=3736295</link>
+
+
+
+        <description></description>
+
+        <fndescription></fndescription>
+
+
+        <fnprice></fnprice>
+        <fnphone></fnphone>
+        <fnurl></fnurl>
+
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736291</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736292</fncategory_oid>
+          </fnevent_category>
+
+
+
+        <fnsort_time>
+          12:01:00 PM
+        </fnsort_time>
+
+        <fndisplay_time>
+          Mon., April 1, 12:01 p.m.
+        </fndisplay_time>
+
+
+
+
+
+
+
+
+        <fnlocation>
+          <fnoid>3318313</fnoid>
+          <fnname>DesertNet</fnname>
+          <fnaddress>202 S. Tucson Blvd.</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Tucson</fncity>
+          <fnstate>AZ</fnstate>
+          <fnpostal_code>85716</fnpostal_code>
+          <fnneighborhood_group>Tucson</fnneighborhood_group>
+          <fnneighborhood>West</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude>32.22022</fnlatitude>
+          <fnlongitude>-110.93576</fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+
+
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+
+
+        <fnposition>1</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+
+
+        <fnposition>2</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+
+
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+
+        <fnsort_title>Example Single Day with Time</fnsort_title>
+        <fnticket_url></fnticket_url>
+
+
+
+
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+  </channel>
+</rss>
