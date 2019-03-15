@@ -15,12 +15,33 @@
       <ul class="eventBar">
         <li><ion-item [routerLink]="'/event-categories'" routerDirection="forward">Categories</ion-item></li>
         <li>Full Calendar</li>
-        <li>Add Event</li>
+        <li><ion-item [routerLink]="'/add-event'" routerDirection="forward">Add Event</ion-item></li>
       </ul>
     </nav>
   </ion-header>
 
   <main>
+    <!-- I need to select all events that relate to the next week -->
+      <div class="styleA">
+        <!-- I need to select all events for each day in the upcoming week -->
+        <h2 class="date">Monday 28, 2019</h2>
+        <ion-list>
+          <ion-item [routerLink]="'/event-info/0000001'" *ngFor="let item of arr" routerDirection="forward">
+            <!-- I need to select all events for a specific day -->
+            <div class="event">
+              <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+              <p class="eventTime">{{item.displayTime}}</p>
+              <h3 class="eventName">{{item.title}}</h3>
+              <p class="eventLocation">{{item.location.name}}</p>
+              <section class="eventDescription">
+                <p>{{item.description}}</p>
+              </section>
+              <p class="eventPrice">{{item.price}}</p>
+            </div>
+          </ion-item>
+        </ion-list>
+      </div>
+
     <div class="styleA">
       <h2 class="date">Monday 28, 2019</h2>
 

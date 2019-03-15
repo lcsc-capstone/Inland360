@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   { path: 'event-list', loadChildren: './Events/event-list/event-list.module#EventListPageModule' },
   { path: 'event-home', loadChildren: './Events/event-home/event-home.module#EventHomePageModule' },
-  { path: 'event-info', loadChildren: './Events/event-info/event-info.module#EventInfoPageModule' },
+  { path: 'event-info/:id', loadChildren: './Events/event-info/event-info.module#EventInfoPageModule' },
   { path: 'event-location', loadChildren: './Events/event-location/event-location.module#EventLocationPageModule' },
   { path: 'event-categories', loadChildren: './Events/event-categories/event-categories.module#EventCategoriesPageModule' },
   { path: 'import-calendar', loadChildren: './import-calendar/import-calendar.module#ImportCalendarPageModule' },

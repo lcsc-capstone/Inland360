@@ -1,4 +1,5 @@
 export class EventData{
+    id: string;
     title: string;
     description: string;
     price: string;
@@ -11,14 +12,14 @@ export class EventData{
 }
 
 export class EventLocation{
-    name;
-    address;
-    addressSupplement;
-    city;
-    state;
-    zip;
-    phone;
-    latitude;
-    longitude;
-    description;
+    name: string;
+    address: string;
+    addressSupplement: string;
+    city: string;
+    state: string;
+    zip: string;
+    phone: string;
+    latitude: string;
+    longitude: string;
+    description: string;
 }

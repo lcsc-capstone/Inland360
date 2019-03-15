@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Calendar } from '@ionic-native/calendar/ngx';
 import { AlertController } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-event-info',
@@ -8,8 +9,13 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./event-info.page.scss'],
 })
 export class EventInfoPage implements OnInit {
+  
+  ID: any;
 
-  constructor(private calendar: Calendar, private alert: AlertController) { }
+  constructor(private calendar: Calendar, private alert: AlertController, public route: ActivatedRoute) 
+  { 
+    this.ID = this.route.snapshot.paramMap.get("id");
+  }
 
   async alert1(){
     const alert2 = await this.alert.create({

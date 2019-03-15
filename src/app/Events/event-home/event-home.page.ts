@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EventsDataService } from '../../events-data.service';
+import { EventData } from '../../eventData';
 
 @Component({
   selector: 'app-event-home',
@@ -8,11 +9,14 @@ import { EventsDataService } from '../../events-data.service';
 })
 export class EventHomePage implements OnInit {
 
+  public arr: any;
+  
   constructor(public events: EventsDataService) { 
-    this.events.loadXML();
+    this.arr = this.events.xmlItems;
+    console.log("Arr is working.");
+    console.log(this.arr);
   }
 
   ngOnInit() {
   }
-
 }

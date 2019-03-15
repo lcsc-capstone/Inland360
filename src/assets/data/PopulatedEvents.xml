@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlnsfn="https//www.publishwithfoundation.com/rss/2.0">
+  <channel>
+    <title>Example Event Feed</title>
+    <link>https://www.example.net</link>
+    <description>Demonstration of different kinds of events as output by the Foundation event feed.</description>
+
+      <item>
+        <fnoid>0000001</fnoid>
+        <fncreation_date>2019-01-01 01:00:00</fncreation_date>
+        <fnlast_modified_date>2019-01-02 02:00:00</fnlast_modified_date>
+
+        <title>Week1Day1</title>
+        <fntitle>Test#1</fntitle>
+
+        <link>https://www.foxnews.com</link>
+
+
+
+        <description>Week1Day1Description</description>
+
+        <fndescription>Week1Day1Description</fndescription>
+
+
+          <fnartist>Artist#1</fnartist>
+
+        <fnprice>Example Price</fnprice>
+        <fnphone>(208) 555-1234</fnphone>
+        <fnurl>https://foo.com/</fnurl>
+
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736291</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736292</fncategory_oid>
+          </fnevent_category>
+
+          <fnfeature>Staff Pick</fnfeature>
+
+          <fnfeature>Members Pick</fnfeature>
+
+          <fnfeature>Tickets Available</fnfeature>
+
+        <fnsort_time>
+          04:01:00 AM
+        </fnsort_time>
+
+        <fndisplay_time>
+          Mondays, 4:01 a.m. Continues through May 6
+        </fndisplay_time>
+
+
+        <fnlocation>
+          <fnoid>0000001</fnoid>
+          <fnname>DesertNet</fnname>
+          <fnaddress>202 S. Tucson Blvd.</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Tucson</fncity>
+          <fnstate>AZ</fnstate>
+          <fnpostal_code>85716</fnpostal_code>
+          <fnneighborhood_group>Tucson</fnneighborhood_group>
+          <fnneighborhood>West</fnneighborhood>
+          <fnphone>208-555-1234</fnphone>
+          <fnlatitude>32.22022</fnlatitude>
+          <fnlongitude>-110.93576</fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+
+          <fnimage>
+        <fnurl>https://thumbs.dreamstime.com/z/girl-plane-years-old-waving-to-landing-okecie-airport-warsaw-poland-141541565.jpg</fnurl>
+
+        <fnposition>1</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://thumbs.dreamstime.com/z/girl-plane-years-old-waving-to-landing-okecie-airport-warsaw-poland-141541565.jpg</fnurl>
+
+
+        <fnposition>2</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://www.foxnews.com</fnurl>
+
+
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+
+        <fnsort_title>Test#1Example</fnsort_title>
+        <fnticket_url>https://www.espn.com</fnticket_url>
+
+
+          <fntags>test</fntags>
+
+          <fntags>example</fntags>
+
+
+
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+
+      <item>
+        <fnoid>0000002</fnoid>
+        <fncreation_date>2019-02-01 02:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 03:00:00</fnlast_modified_date>
+
+        <title>Example#2Title</title>
+        <fntitle>Example#2Title</fntitle>
+
+        <link>https://www.slashdot.org</link>
+
+
+
+        <description>Example#2 Description</description>
+
+        <fndescription>Example#2 Description</fndescription>
+
+
+          <fnartist>Example#2 Artist</fnartist>
+
+        <fnprice>Example Price</fnprice>
+        <fnphone>(208) 555-0002</fnphone>
+        <fnurl>https://www.slashdot.org/</fnurl>
+
+          <fnevent_category>
+            <fnsection_name>Test#2 Section</fnsection_name>
+            <fnsection_oid>0000002</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>0000002</fncategory_oid>
+          </fnevent_category>
+
+
+
+          <fnfeature>Staff Pick#2</fnfeature>
+
+          <fnfeature>Members Pick#2</fnfeature>
+
+          <fnfeature>Tickets Available#2</fnfeature>
+
+        <fnsort_time>
+          02:01:00 AM
+        </fnsort_time>
+
+        <fndisplay_time>
+          Mondays, 2:01 a.m. Continues through May 6
+        </fndisplay_time>
+
+
+
+
+        <fnlocation>
+          <fnoid>0000002</fnoid>
+          <fnname>DesertNet</fnname>
+          <fnaddress>202 S. Tucson Blvd.</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Tucson</fncity>
+          <fnstate>AZ</fnstate>
+          <fnpostal_code>85716</fnpostal_code>
+          <fnneighborhood_group>Tucson</fnneighborhood_group>
+          <fnneighborhood>West</fnneighborhood>
+          <fnphone>208-555-0002</fnphone>
+          <fnlatitude>32.22022</fnlatitude>
+          <fnlongitude>-110.93576</fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+
+
+          <fnimage>
+        <fnurl>https://upload.wikimedia.org/wikipedia/commons/f/f4/Slashdot_logo.png</fnurl>
+
+
+        <fnposition>1</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://upload.wikimedia.org/wikipedia/commons/f/f4/Slashdot_logo.png</fnurl>
+
+
+        <fnposition>2</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://upload.wikimedia.org/wikipedia/commons/f/f4/Slashdot_logo.png</fnurl>
+
+
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+
+        <fnsort_title>Example#2 All Fields Populated</fnsort_title>
+        <fnticket_url>https://www.slashdot.org</fnticket_url>
+
+
+          <fntags>test#2</fntags>
+
+          <fntags>example#2</fntags>
+
+
+
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>0000003</fnoid>
+        <fncreation_date>2019-03-01 03:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 04:00:00</fnlast_modified_date>
+
+        <title>Example#3: All Fields Populated</title>
+        <fntitle>Example#3: All Fields Populated</fntitle>
+
+        <link>https://www.espn.com</link>
+
+
+
+        <description>Example#3 Description</description>
+
+        <fndescription>Example#3 Description</fndescription>
+
+
+          <fnartist>Example#3 Artist</fnartist>
+
+        <fnprice>Example#3 Price</fnprice>
+        <fnphone>(208) 555-0003</fnphone>
+        <fnurl>https://www.espn.com</fnurl>
+
+          <fnevent_category>
+            <fnsection_name>Test#3 Section</fnsection_name>
+            <fnsection_oid>0000003</fnsection_oid>
+            <fncategory_name>Test#3 Category</fncategory_name>
+            <fncategory_oid>0000003</fncategory_oid>
+          </fnevent_category>
+
+
+
+          <fnfeature>Staff Pick#3</fnfeature>
+
+          <fnfeature>Members Pick#3</fnfeature>
+
+          <fnfeature>Tickets Available#3</fnfeature>
+
+        <fnsort_time>
+          03:01:00 AM
+        </fnsort_time>
+
+        <fndisplay_time>
+          Mondays, 3:01 a.m. Continues through May 3
+        </fndisplay_time>
+
+
+
+
+        <fnlocation>
+          <fnoid>0000003</fnoid>
+          <fnname>DesertNet</fnname>
+          <fnaddress>202 S. Tucson Blvd.</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Tucson</fncity>
+          <fnstate>AZ</fnstate>
+          <fnpostal_code>85716</fnpostal_code>
+          <fnneighborhood_group>Tucson</fnneighborhood_group>
+          <fnneighborhood>West</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude>32.22022</fnlatitude>
+          <fnlongitude>-110.93576</fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+
+
+          <fnimage>
+        <fnurl>https://upload.wikimedia.org/wikipedia/commons/4/43/ESPN_identification_card.jpg</fnurl>
+
+
+        <fnposition>1</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://upload.wikimedia.org/wikipedia/commons/4/43/ESPN_identification_card.jpg</fnurl>
+
+
+        <fnposition>2</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://upload.wikimedia.org/wikipedia/commons/4/43/ESPN_identification_card.jpg</fnurl>
+
+
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+
+        <fnsort_title>Example#3 All Fields Populated</fnsort_title>
+        <fnticket_url>https://www.espn.com</fnticket_url>
+
+
+          <fntags>test#3</fntags>
+
+          <fntags>example#3</fntags>
+
+
+
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>0000004</fnoid>
+        <fncreation_date>2019-04-01 04:00:00</fncreation_date>
+        <fnlast_modified_date>2019-05-01 05:00:00</fnlast_modified_date>
+
+        <title>Example#4: All Fields Populated</title>
+        <fntitle>Example#4: All Fields Populated</fntitle>
+
+        <link>https://www.macrumors.com</link>
+
+
+
+        <description>Example#4 Description</description>
+
+        <fndescription>Example#4 Description</fndescription>
+
+
+          <fnartist>Example#4 Artist</fnartist>
+
+        <fnprice>Example#4 Price</fnprice>
+        <fnphone>(208) 555-0004</fnphone>
+        <fnurl>https://www.macrumors.com/</fnurl>
+
+          <fnevent_category>
+            <fnsection_name>Test#4 Section</fnsection_name>
+            <fnsection_oid>0000004</fnsection_oid>
+            <fncategory_name>Test#4 Category</fncategory_name>
+            <fncategory_oid>0000004</fncategory_oid>
+          </fnevent_category>
+
+
+
+          <fnfeature>Staff Pick#4</fnfeature>
+
+          <fnfeature>Members Pick#4</fnfeature>
+
+          <fnfeature>Tickets Available#4</fnfeature>
+
+        <fnsort_time>
+          04:01:00 AM
+        </fnsort_time>
+
+        <fndisplay_time>
+          Mondays, 4:01 a.m. Continues through May 4
+        </fndisplay_time>
+
+
+
+
+        <fnlocation>
+          <fnoid>0000004</fnoid>
+          <fnname>DesertNet</fnname>
+          <fnaddress>202 S. Tucson Blvd.</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Tucson</fncity>
+          <fnstate>AZ</fnstate>
+          <fnpostal_code>85716</fnpostal_code>
+          <fnneighborhood_group>Tucson</fnneighborhood_group>
+          <fnneighborhood>West</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude>32.22022</fnlatitude>
+          <fnlongitude>-110.93576</fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+
+
+          <fnimage>
+        <fnurl>https://upload.wikimedia.org/wikipedia/en/thumb/9/93/MacRumors.svg/500px-MacRumors.svg.png</fnurl>
+
+
+        <fnposition>1</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://upload.wikimedia.org/wikipedia/en/thumb/9/93/MacRumors.svg/500px-MacRumors.svg.png</fnurl>
+
+
+        <fnposition>2</fnposition>
+      </fnimage>
+
+      <fnimage>
+        <fnurl>https://upload.wikimedia.org/wikipedia/en/thumb/9/93/MacRumors.svg/500px-MacRumors.svg.png</fnurl>
+
+
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+
+        <fnsort_title>Example#4 All Fields Populated</fnsort_title>
+        <fnticket_url>https://www.macrumors.com</fnticket_url>
+
+
+          <fntags>test#4</fntags>
+
+          <fntags>example#4</fntags>
+
+
+
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+  </channel>
+</rss>

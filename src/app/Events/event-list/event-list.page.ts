@@ -13,7 +13,7 @@ export class EventListPage implements OnInit {
     {path: "add-event", icon: "wifi", title: "Add Event"},
     {path: "event-home", icon: "paper-plane", title: "Upcoming Events"},
     {path: "event-categories", icon: "paper-plane", title: "Categories"},
-    {path: "", ion: "build", title: "Full Calendar"}
+    {path: "", icon: "build", title: "Full Calendar"}
   ];
 
   private icons = [
