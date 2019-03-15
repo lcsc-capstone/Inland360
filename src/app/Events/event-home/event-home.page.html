@@ -1,25 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Events A</ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+    <ion-title>Events</ion-title>
   </ion-toolbar>
+  <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
+  <ion-searchbar></ion-searchbar>
+  <nav>
+      <ul class="eventBar">
+        <li>Categories</li>
+        <li>Full Calendar</li>
+        <li>Add Event</li>
+      </ul>
+    </nav>
 </ion-header>
 
 <ion-content padding>
-  <ion-header>
-    <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
-    <ion-searchbar></ion-searchbar>
-    <nav class="event">
-      <ul class="eventBar">
-        <li><ion-item [routerLink]="'/event-categories'" routerDirection="forward">Categories</ion-item></li>
-        <li>Full Calendar</li>
-        <li><ion-item [routerLink]="'/add-event'" routerDirection="forward">Add Event</ion-item></li>
-      </ul>
-    </nav>
-  </ion-header>
-
   <main>
     <!-- I need to select all events that relate to the next week -->
       <div class="styleA">
