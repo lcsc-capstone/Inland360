@@ -14,13 +14,16 @@ import { EventData } from './eventData';
 
 export class EventsDataService {
   public xmlItems: any;
-  
-  public arr: Array<EventData> = [];
+
+  public getXmlItems()
+  {
+    console.log(this.xmlItems);
+    return this.xmlItems;
+  }
 
   public loadXML()
   {
-    console.log("Starting loadXML()...");
-    this.http.get('/assets/data/outputInland (1).xml',
+    this.http.get('../assets/data/PopulatedEvents.xml',
     {
       headers: new HttpHeaders()
       .set('Content-Type', 'text/xml')
@@ -31,14 +34,10 @@ export class EventsDataService {
     })
     .subscribe((data)=>
     {
-      this.arr = [];
-      console.log(this.arr);
       this.parseXML(data)
       .then((data)=>
       {
-        console.log(data);
         this.xmlItems = data;
-        console.log(this.xmlItems);
       });
     }, (err) =>
     {
@@ -84,14 +83,31 @@ export class EventsDataService {
               description: item.fnlocation[0].fndescription[0],
             },
             displayTime: item.fndisplay_time[0],
-            sortTime: item.fnsort_time[0]
+            sortTime: item.fnsort_time[0],
+            date: getDate(item.fndisplay_time[0], item.fnsort_time[0])
           });
-          console.log(arr2);
         }
-        console.log("arr2: " + arr2);
         resolve(arr2); 
       });
     });
   }
   constructor(public http: HttpClient) { }
+}
+
+function getDate(displayTime: string, sortTime: string)
+{
+    var sort = sortTime;
+    var display = displayTime;
+    var displaySplit = display.split(',');
+    var displaySplitSplit = displaySplit[1].split(" ");
+    var Month = displaySplitSplit[3].trim();
+    var numericalDay = displaySplitSplit[4].trim();
+    var year = displaySplit[2].trim();
+    var sortSplit = sort.split(":");
+    var sortSplitSplit = sortSplit[2].split(" ");
+    var Hour = sortSplit[0].trim();
+    var Minutes = sortSplit[1].trim();
+    var Seconds = sortSplitSplit[0].trim();
+    var newFormat = Month + " " + numericalDay + ", " + year + " " + Hour + ":" + Minutes + ":" + Seconds;
+    return new Date(newFormat);
 }

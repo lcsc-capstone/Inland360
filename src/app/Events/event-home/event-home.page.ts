@@ -13,7 +13,6 @@ export class EventHomePage implements OnInit {
   
   constructor(public events: EventsDataService) { 
     this.arr = this.events.xmlItems;
-    console.log("Arr is working.");
     console.log(this.arr);
   }
 

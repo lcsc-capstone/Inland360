@@ -1,16 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { EventsDataService } from '../events-data.service';
-//import { AnyAaaaRecord } from 'dns';
-//module.exports = require("readable-stream");
+import { getLocaleDateFormat } from '@angular/common';
+import { EventData } from '../eventData';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
 export class HomePage implements OnInit{
 
   private selectedItem: any;
+  public items: Array<{ title: string; note: string; icon: string }> = [];
+  public eventsxmldata: Array<EventData>;
+  public readingIn: ["Testing...?", "I'm trying..."]
 
   private pages = [
     'Events A',
@@ -39,8 +43,6 @@ export class HomePage implements OnInit{
     'bluetooth',
     'build'
   ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
-  public eventsxmldata: any;
 
   constructor(public eventservice: EventsDataService) {
     for (let i = 0; i < this.pages.length; i++) {
@@ -52,11 +54,7 @@ export class HomePage implements OnInit{
     }
     this.eventservice.loadXML();
     this.eventsxmldata = this.eventservice.xmlItems;
-    //console.log(this.eventservice.xmlItems);
-    //console.log(this.eventservice.arr);
   }
-
-
 
   ngOnInit() {
   }
