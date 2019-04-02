@@ -10,13 +10,12 @@
 <ion-content padding>
   <div class="event">
     <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
-      <h3 class="eventName">Open mic</h3>
-      <p class="eventLocation">Moscow-Pullman</p>
-      <p class="venueName">Wenaha Gallery</p>
+      <h3 class="eventName">{{info.location.name}}</h3>
       <p class="venueAddrress venueApartment venueStreet venueCity venueState venueZip">
-        219 East Main Street Dayton, WA 99328
+        {{info.location.address}} {{info.location.addressSupplement}} {{info.location.city}}, {{info.location.state}} {{info.location.zip}}
       </p>
-      <p>latitude: 46.319885 longitude: -117.980428</p>
+      <p>{{info.location.description}}</p>
+      <p>{{info.location.phone}}</p>
       <p>We want to pull google maps in here...</p>
       <p>How do we pull this into our app?</p>
       <p>I think this works differently on Android and ISO. How can we work with that?</p>

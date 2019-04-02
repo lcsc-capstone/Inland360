@@ -18,61 +18,23 @@
       </ion-item>
     </ion-list>
   <main>
-    <p>Testing now...</p>
-    <ion-item *ngFor= "let item of eventsxmldata">
-      <p>{{item}}</p>
-      <!-- <h1><ion-item [routerLink]="'/event-home'" routerDirection="forward">Upcomming Events</ion-item></h1> -->
-      <!-- <div *ngIf="item.date.getDate() == new Date('March 1 2019').getDate()">
-        <div *ngIf="item.date.getMonth() == new Date('March 1 2019').getMonth()">
-          <div *ngIf="item.date.getYear() == new Date('March 1 2019').getYear()">
-            <ion-slides pager="true" [options]="slideOpts">
-              <ion-slide>
-                  <div>
-                    <ion-img src="../../assets/openMicNight.jpg" alt="main image placeholder" id="mainImg"></ion-img>
-                    <h2>{{item.title}}</h2>
-                    <p>{{item.location.name}}</p>
-                    <p>{{item.sortTime}}</p>
-                    <p><ion-item [routerLink]="'/event-info'" routerDirection="forward">Go to the event page?</ion-item></p>
-                  </div>
-              </ion-slide>
-            </ion-slides>
-          </div>
-        </div>
-      </div> -->
-    </ion-item>
-    <p>Test area ends here</p>
-    <div>
-      <h1><ion-item [routerLink]="'/event-home'" routerDirection="forward">Upcomming Events</ion-item></h1>
-      <ion-slides pager="true" [options]="slideOpts">
-        <ion-slide>
-          <div>
-            <ion-img src="../../assets/openMicNight.jpg" alt="main image placeholder" id="mainImg"></ion-img>
-            <h2>Open mic</h2>
-            <p>Pullman</p>
-            <p>9:00 pm</p>
-            <p><ion-item [routerLink]="'/event-info'" routerDirection="forward">Go to the event page?</ion-item></p>
-          </div>
-        </ion-slide>
-        <ion-slide>
-          <div>
-            <ion-img src="../../assets/openMicNight.jpg" alt="main image placeholder" id ="mainImg"></ion-img>
-            <h2>Intuitive Eating Program</h2>
-            <p>Moscow-Pullman</p>
-            <p>9:00 pm</p>
-            <p><ion-item [routerLink]="'/event-info'" routerDirection="forward">Go to the event page?</ion-item></p>
-          </div>
-        </ion-slide>
-        <ion-slide>
-          <div>
-            <ion-img src="../../assets/Reid.jpg" alt="main image placeholder" id ="mainImg"></ion-img>
-            <h2>U of I Faculty Recital - James Reid, guitar</h2>
-            <p>Moscow-Pullman</p>
-            <p>9:00 pm</p>
-            <p><ion-item [routerLink]="'/event-info'" routerDirection="forward">Go to the event page?</ion-item></p>
-          </div>
-        </ion-slide>
-      </ion-slides>
-    </div>
+    <h1><ion-item [routerLink]="'/event-home'" routerDirection="forward">Upcomming Events</ion-item></h1>
+    <ion-slides pager="true" [options]="slideOpts">
+      <ng-container *ngIf="items">
+        <ng-container *ngFor= "let item of eventsxmldata">
+          <ion-slide *ngIf="item.date >= todaysDate && weekOut >= item.date">
+            <div (click)=goEventDetails(item)>
+              <ion-img src="../../assets/openMicNight.jpg" alt="main image placeholder" id="mainImg"></ion-img>
+              <h2>{{item.title}}</h2>
+              <p>{{item.location.name}}</p>
+              <p>{{item.sortTime}}</p>
+              <br>
+              <br>
+            </div>
+          </ion-slide>
+        </ng-container>
+      </ng-container>
+    </ion-slides>   
     <div>
       <ion-img src="https://s3.amazonaws.com/FringeBucket/image_placeholder.png" alt="main image placeholder" id ="mainImg"></ion-img>
     <h2><ion-item [routerLink]="'/snaps-home'" routerDirection="forward">Share Your Snaps</ion-item></h2>

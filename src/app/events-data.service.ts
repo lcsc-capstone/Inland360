@@ -15,6 +15,19 @@ import { EventData } from './eventData';
 export class EventsDataService {
   public xmlItems: any;
 
+  public getEvent(id: string)
+  {
+    for(var i = 0; i < this.xmlItems.length; i++)
+    {
+        if(this.xmlItems[i].id == id)
+        {
+            return this.xmlItems[i];
+        }
+    }
+    return "Not found!";
+    
+  }
+
   public getXmlItems()
   {
     console.log(this.xmlItems);

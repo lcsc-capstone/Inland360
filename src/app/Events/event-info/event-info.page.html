@@ -12,21 +12,20 @@
 <ion-content padding>
     <main>
       <div class="styleA">
-        <h2 class="date">Monday 28, 2019</h2>
+        <h2 class="date">{{info.displayTime}}</h2>
   
         <div class="event">
           <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
-            <p class="eventTime">9:00 pm</p>
-            <h3 class="eventName">Open mic</h3>
-            <ion-item [routerLink]="'/event-location'" routerDirection="forward">
-            <p class="eventLocation">Moscow-Pullman</p>
-          </ion-item>
-            <section class="eventDescription">
-              <p>Pullman’s longest running open mic.  We welcome all talents and skill levels.  Sign ups start at 9 pm</p>
-            </section>
-            <p class="eventPrice">Price: Free</p>
-  
-            <ion-button (click)="alert1()">Add to my Calendar</ion-button>
+        </div>
+          <h3 class="eventName">{{info.title}}</h3>
+          <p>{{info.description}}</p>
+          <p class="eventLocation" (click) = goEventLocation()>{{info.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{info.description}}</p>
+          </section>
+          <p class="eventPrice">{{info.price}}</p>
+        <div class="event">
+          <ion-button (click)="alert1()">Add to my Calendar</ion-button>
         </div>
       </div>
     </main>
