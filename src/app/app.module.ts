@@ -11,6 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { EventsDataService } from './events-data.service';
 import { HttpModule } from '@angular/http';
 
+import { InAppBrowser, InAppBrowserEvent, InAppBrowserObject } from '@ionic-native/in-app-browser/ngx';
+import { Camera } from '@ionic-native/camera/ngx';
+import { PhotoLibrary } from '@ionic-native/photo-library/ngx';
+import { File } from '@ionic-native/File/ngx';
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -24,6 +30,10 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     EventsDataService,
     SplashScreen,
+    Camera,
+    PhotoLibrary,
+    InAppBrowser,
+    File,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
