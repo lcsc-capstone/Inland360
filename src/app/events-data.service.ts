@@ -28,6 +28,22 @@ export class EventsDataService {
     
   }
 
+  getFilteredEvents(queryString)
+  {
+      return this.xmlItems.then(Events => {
+          let theFilteredEvents: any = [];
+
+          for (let theEvent of Events)
+          {
+              if(theEvent.title.toLowerCase().indexOf(queryString.toLowerCase())> -1)
+              {
+                  theFilteredEvents.push(theEvent);
+              }
+          }
+          return theFilteredEvents;
+      });
+  }
+
   public getXmlItems()
   {
     console.log(this.xmlItems);

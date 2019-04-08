@@ -23,6 +23,9 @@ export class HomePage implements OnInit{
   public todaysDate: Date = new Date('April 2, 2019 03:24:00');
   public weekOut: Date;
 
+  events: Array<EventData> = [];
+  searchQuery: string = '';
+
   private pages = [
     'Events A',
     'Events B',
@@ -70,6 +73,24 @@ export class HomePage implements OnInit{
   goEventDetails(theEventData){
     let url = './event-info/' + theEventData.id;
     this.router.navigate([url]); 
+  }
+
+  getEvents(event)
+  {
+    this.eventsxmldata.xmlItems.then(theResult => {
+      this.events = theResult;
+    })
+    let queryString = event.target.value;
+    if(queryString != undefined)
+    {
+      if(queryString.trim() == '')
+      {
+        return;
+      }
+      this.eventservice.getFilteredEvents(queryString).then(theResult => {
+        this.events = theResult;
+      })
+    }
   }
 
   ngOnInit() {

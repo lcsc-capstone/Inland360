@@ -44,9 +44,12 @@ export class EventInfoPage implements OnInit {
         }, {
           text: 'Okay',
           handler: () => {
-            var date = new Date(2019, 3, 3, 15, 30, 0, 0);
-            var date2 = new Date(2019, 3, 3, 16, 0, 0, 0);
-            this.calendar.createEvent(this.info.title, this.info.location.name, this.info.description, date, date2);
+            var twoHour = new Date();
+            twoHour.setDate(this.info.date.getDate() + 2);
+            var date = new Date();
+            date.setDate(this.info.date.getDate());
+            
+            this.calendar.createEvent(this.info.title, this.info.location.name, this.info.description, date, twoHour);
           }
         }
       ]

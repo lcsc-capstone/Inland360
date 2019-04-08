@@ -23,12 +23,14 @@ const routes: Routes = [
   { path: 'event-categories', loadChildren: './Events/event-categories/event-categories.module#EventCategoriesPageModule' },
   { path: 'import-calendar', loadChildren: './import-calendar/import-calendar.module#ImportCalendarPageModule' },
   { path: 'snaps-home', loadChildren: './Snaps/snaps-home/snaps-home.module#SnapsHomePageModule' },
-  { path: 'snaps-upload', loadChildren: './Snaps/snaps-upload/snaps-upload.module#SnapsUploadPageModule' },
+  // { path: 'snaps-upload', loadChildren: './Snaps/snaps-upload/snaps-upload.module#SnapsUploadPageModule' },
+  { path: 'snaps-upload', loadChildren: './snap-upload/snap-upload.module#SnapUploadPageModule' },
   { path: 'snaps-list', loadChildren: './Snaps/snaps-list/snaps-list.module#SnapsListPageModule' },
   { path: 'snaps-new-account', loadChildren: './Login/snaps-new-account/snaps-new-account.module#SnapsNewAccountPageModule' },
   { path: 'login-forgot-password', loadChildren: './Login/login-forgot-password/login-forgot-password.module#LoginForgotPasswordPageModule' },
   { path: 'login-new-password', loadChildren: './Login/login-new-password/login-new-password.module#LoginNewPasswordPageModule' },
   { path: 'add-event', loadChildren: './Events/add-event/add-event.module#AddEventPageModule' },
+  //{ path: 'snap-upload', loadChildren: './snap-upload/snap-upload.module#SnapUploadPageModule' },
 ];
 
 @NgModule({
