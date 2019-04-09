@@ -1,0 +1,112 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Events</ion-title>
+  </ion-toolbar>
+  <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
+  <ion-searchbar></ion-searchbar>
+  <nav>
+      <ul class="eventBar">
+        <li>Categories</li>
+        <li>Full Calendar</li>
+        <li>Add Event</li>
+      </ul>
+    </nav>
+</ion-header>
+
+<ion-content padding>
+  <main>
+    <div class="styleA">
+      <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= todaysDate && oneOut > item.date">{{item.date}}</h2>
+        <div *ngIf="item.date >= todaysDate && oneOut > item.date" (click)=goEventDetails(item)  class="event">
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{item.description}}</p>
+          </section>
+          <p class="eventPrice">{{item.price}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= oneOut && twoOut > item.date">{{item.displayTime}}</h2>
+        <div *ngIf="item.date >= todaysDate && oneOut > item.date" class="event" (click)=goEventDetails(item)>
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{item.description}}</p>
+          </section>
+          <p class="eventPrice">{{item.price}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= threeOut && fourOut > item.date">{{item.displayTime}}</h2>
+        <div *ngIf="item.date >= threeOut && fourOut > item.date" class="event" (click)=goEventDetails(item)>
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{item.description}}</p>
+          </section>
+          <p class="eventPrice">{{item.price}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= fourOut && fiveOut > item.date">{{item.displayTime}}</h2>
+        <div *ngIf="item.date >= fourOut && fiveOut > item.date" class="event" (click)=goEventDetails(item)>
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{item.description}}</p>
+          </section>
+          <p class="eventPrice">{{item.price}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= fiveOut && sixOut > item.date">{{item.displayTime}}</h2>
+        <div *ngIf="item.date >= fiveOut && sixOut > item.date" class="event" (click)=goEventDetails(item)>
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{item.description}}</p>
+          </section>
+          <p class="eventPrice">{{item.price}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let item of arr">
+        <ion-list *ngIf="item.date >= sixOut && sevenOut > item.date">
+          <h2 class="date">{{item.displayTime}}</h2>
+          <ion-item>
+            <div *ngIf="item.date >= sixOut && sevenOut > item.date" class="event">
+              <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+              <p class="eventTime">{{item.displayTime}}</p>
+              <h3 class="eventName">{{item.title}}</h3>
+              <p class="eventLocation">{{item.location.name}}</p>
+              <section class="eventDescription">
+                <p>{{item.description}}</p>
+              </section>
+              <p class="eventPrice">{{item.price}}</p>
+            </div>
+          </ion-item>
+        </ion-list>
+      </ng-container>
+    </div>
+  </main>
+
+  <ion-footer>
+    <p>2019 Moscow-Pullman Daily News and Lewiston Tribune. Terms of Service #</p>
+  </ion-footer>
+  
+</ion-content>
+

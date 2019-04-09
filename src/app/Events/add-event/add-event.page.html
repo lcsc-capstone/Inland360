@@ -1,0 +1,128 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>Add an Event</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <form>
+      <fieldset>
+        <legend>Event Informatiopn</legend>
+        <label>Event Title (max 100 characters)</label>
+        <input type="text" name="title">
+        <br>
+        <br>
+        <fieldset>
+          <legend>VenueA and VenueB</legend>
+          <p>VenueA (Try to auto populate this based on user input)</p>
+          <label>Venue</label>
+          <input type="text" name="VenueA">
+          <br>
+          <br>
+          <p>VenueB (An alternative for VenueA)</p>
+          <label>Venue Name</label>
+          <input type="text" name="VenueBName">
+          <br>
+          <label>Street Address</label>
+          <input type="text" name="VenueBAddress">
+          <br>
+          <label>City</label>
+          <input type="text" name="VenueBCity">
+          <br>
+          <label>State</label>
+          <input type="text" name="VenueBState">
+          <br>
+          <label>Zip</label>
+          <input type="text" name="VenueBZip">
+        </fieldset>
+        <fieldset>
+          <legend>Event Times</legend>
+          <label>Date</label>
+          <input type="date" name="date">
+          <br>
+          <label>Start Time</label>
+          <input type="time" name="startTime">
+          <br>
+          <label>End Time</label>
+          <input type="time" name="endTime">
+          <br>
+          <label>All Day</label>
+          <input type="checkbox" name="allDayTime">
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Possible Matching Events</legend>
+        <optgroup>
+          <option>Possible matching events that are already in Inland</option>
+        </optgroup>
+        <button>This is my event! (Leads to event page)</button>
+      </fieldset>
+      <fieldset>
+        <legend>Description</legend>
+        <label>Basic Info</label>
+        <textarea rows="10" cols="30"></textarea>
+        <br>
+        <label>Contact Info</label>
+        <input type="email">
+        <input type="tel">
+        <br>
+        <label>Expected Attendance</label>
+        <input type="number" min=0 max=1,000,000>
+        <br>
+        <label>Category</label>
+        <optgroup>
+          <option>Animals and Nature</option>
+          <option>Buissness</option>
+          <option>Charity and Volunteer</option>
+          <option>Children and Family</option>
+          <option>Education</option>
+          <option>Fair and Festivals</option>
+          <option>Film</option>
+          <option>Food and Drink</option>
+          <option>Health and Wellness</option>
+          <option>Literary</option>
+          <option>Music</option>
+          <option>Nightlife</option>
+          <option>Other</option>
+          <option>Outdoors and Recreation</option>
+          <option>Performing Arts</option>
+          <option>Science and Technology</option>
+          <option>Spirituality</option>
+          <option>Sports</option>
+          <option>Visual Arts</option>
+        </optgroup>
+        <br>
+        <label>Admission</label>
+        <optgroup>
+          <option>Free</option>
+          <option><label>Price</label><input type="number" max=9999.99></option>
+          <option>
+            <label>Price Range</label>
+            <input type="number"> to <input type="number">
+            <textarea rows=10 cols=30>More details...</textarea>
+          </option>
+          <option>
+            <label>Other</label>
+            <textarea rows=10 cols=30>Can of food...</textarea>
+          </option>
+        </optgroup>
+      </fieldset>
+      <fieldset>
+        <legend>Optional Extras</legend>
+        <label>Image</label>
+        <input type="image">
+        <br>
+        <label>Website</label>
+        <input type="url">
+        <br>
+        <label>Ticketing URL</label>
+        <input type="url">
+        <br>
+        <label>Additional Media</label>
+        <input type="url">
+      </fieldset>
+    </form>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>Event Location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="event">
+    <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+      <h3 class="eventName">{{info.location.name}}</h3>
+      <p class="venueAddrress venueApartment venueStreet venueCity venueState venueZip">
+        {{info.location.address}} {{info.location.addressSupplement}} {{info.location.city}}, {{info.location.state}} {{info.location.zip}}
+      </p>
+      <p>{{info.location.description}}</p>
+      <p>{{info.location.phone}}</p>
+      <p>We want to pull google maps in here...</p>
+      <p>How do we pull this into our app?</p>
+      <p>I think this works differently on Android and ISO. How can we work with that?</p>
+      <ion-button>Send location to my phone...? Open in google maps?</ion-button>
+  </div>
+
+  <ion-footer>
+    <p>2019 Moscow-Pullman Daily News and Lewiston Tribune. Terms of Service #</p>
+  </ion-footer>
+</ion-content>
