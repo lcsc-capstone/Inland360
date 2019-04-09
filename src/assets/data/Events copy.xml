@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <events>
+        <event>
+            <starttime>09:00</starttime>
+            <endtime></endtime>
+            <title>Painted Rock Stars</title>
+            <description>People around the country are painting rocks and hiding them, adding a touch of art and kindness to their environment. The creativity and skill of these artists is astounding, and Wenaha Gallery showcases the work of eight regional painted rock artists. With images ranging from a slice of cherry pie to acrylic pour – all on a substrate of rocks – the Rock Star Art Event is well worth seeing.</description>
+            <featured>true</featured>
+            <premier>false</premier>
+            <id>id 1</id>
+            <image>https://images.spingo.com/i/live-image-service/rP/8_/f_IrwF6qv_0Rfwc_64qkmcgv7GVmxdk6qFfSXdA</image>
+            <cost>
+                <price>Free</price>
+                <description></description>
+            </cost>
+            <venue>
+                <name>Wenaha Gallery</name>
+                <id>This should be geocoordinates</id>
+                <address>219</address>
+                <apartment></apartment>
+                <street>East Main Street</street>
+                <city>Dayton</city>
+                <state>WA</state>
+                <zip>99328</zip>
+                <latitude>46.319885</latitude>
+                <longitude>-117.980428</longitude>
+            </venue>
+        </event>
+        <event>
+            <starttime>11:00</starttime>
+            <endtime></endtime>
+            <title>Making an Impression: Daily Wear in Dayton 1890-1989</title>
+            <description>The Dayton Historic Depot has a new exhibit ready for viewing.  This year, we will be sharing women’s clothing from the Depot’s Collection and from the Boldman House Collection.  The clothing is organized by time period, and is accompanied by foundation garments, hats, and purses, as well.  The exhibit provides some cultural information on each decade and a discussion on how the fashion changed during that time period.  As women’s roles transformed, their clothing necessarily did as well.The exhibit has been funded by grants from the Warren Foundation and the Pacific Power Foundation.  Additional artifacts have been loaned to us by Lorna Barth, Sylvia Beuhler, Christine Broughton, and Mary Luce.  We would like to thank all of them for helping create this fascinating exhibit. The Dayton Historic Depot is located at 222 E. Commercial Ave, in Dayton, WA, and is open from 11: 00 a.m. to 4: 00 p.m. Wednesday-Saturday.  We hope you come visit us soon!</description>
+            <featured></featured>
+            <premier></premier>
+            <id></id>
+            <image>https://images.spingo.com/i/live-image-service/rR/Yi/Lh_K40YJCqYL7UAhh3IUAfeFtdCKk-_xTDijQAY</image>
+            <cost>
+                <price>Free</price>
+                <description></description>
+            </cost>
+            <venue>
+                <name>Dayton Historic Depot</name>
+                <id></id>
+                <address>222</address>
+                <apartment>E.</apartment>
+                <street>Commercial Ave</street>
+                <city>Dayton</city>
+                <state>WA</state>
+                <zip>99328</zip>
+                <latitude>46.3205336</latitude>
+                <longitude>-117.9813686</longitude>
+            </venue>    
+        </event>
+        <event>
+            <starttime>13:15</starttime>
+            <endtime></endtime>
+            <title>Liberty Theater Talk and Tours, Help and plan the Liberty&#x27;s future.</title>
+            <description>From 1921 through the early 2000s, the Liberty Theater was an entertainment hub in downtown Lewiston.Volunteers for the Liberty Theater Project are working to renovate the historic building on Main Street. In the coming weeks they are inviting the public to tour the theater and provide input on the upgrades and programming people most want to see there in the future, whether that be films, plays music, speakers or all of the above. Four Talk and Tour events will begin with a tour and be followed by a question and answer session.</description>
+            <featured>false</featured>
+            <premier>true</premier>
+            <id></id>
+            <image>https://images.spingo.com/i/live-image-service/uz/Sf/6xzwwcEOpXwmreHiQtok-G3dhhjn-4fmbw-7IJE</image>
+            <cost>
+                <price>Free</price>
+                <description></description>
+            </cost>
+            <venue>
+                <name>Liberty Theater</name>
+                <id></id>
+                <address>611</address>
+                <apartment></apartment>
+                <street>Main St.</street>
+                <city>Lewiston</city>
+                <state>ID</state>
+                <zip>83501</zip>
+                <latitude>46.4214362</latitude>
+                <longitude>-117.0259826</longitude>
+            </venue>
+        </event>
+        <event>
+            <starttime>17:30</starttime>
+            <endtime></endtime>
+            <title>Happy Hour with Moscow Young Professionals</title>
+            <description>Join us for a casual networking happy hour with Moscow Young Professionals! A great opportunity to meet fellow professionals and expand your network. Stop by when you can, leave when you need to. We&#x27;ll be in the back room of Hunga Dunga Brewing Company enjoying no-host beverages and bites from 5:30 - 7:30 pm. This event is free and open to everyone, (current members, potential members and those who are interested in networking and great beverages). Questions about this event? Feel free to send us a message or email MoscowYoungProfessionals@gmail.com. See you there!</description>
+            <featured>false</featured>
+            <premier>false</premier>
+            <id></id>
+            <image>https://images.spingo.com/i/live-image-service/4F/--/qDqvgaIe249-vZ_plZyHmhTyt_JwiA9tGI6Tg84</image>
+                <cost>
+                    <price>Free</price>
+                    <description></description>
+                </cost>
+                <venue>
+                    <name>Dunga Brewing Company</name>
+                    <id></id>
+                    <address>333</address>
+                    <apartment></apartment>
+                    <street>N Jackson</street>
+                    <city>Moscow</city>
+                    <state>ID</state>
+                    <zip>83843</zip>
+                    <latitude>46.736425</latitude>
+                    <longitude>-117.002865</longitude>
+                </venue>
+        </event>
+        <event>
+            <starttime>18:30</starttime>
+            <endtime></endtime>
+            <title>Martin Forum: &quot;US Foreign Policy Challenges in 2019&quot;</title>
+            <description>Join the Martin Institute on Wednesday, Feb. 6, 2019 at 6:30 p.m. in the University of Idaho Admin Auditorium for our Martin Forum “U.S. Foreign Policy Challenges in 2019,” presented by Ambassador (Retired) Kristie A. Kenney.
+                            Ambassador Kenney holds the State Department&#x27;s highest rank of Career Ambassador. Over her 30-year career, she represented the United States abroad as Ambassador three times and served in senior positions at the State Department and the White House. 
+                            To learn more about the event and the Martin Institute, visit https://www.uidaho.edu/class/martin-institute/martin-forums/2018-19 or email damman@uidaho.edu
+            </description>
+            <featured>false</featured>
+            <premier>false</premier>
+            <id></id>
+            <image>https://images.spingo.com/i/live-image-service/2Z/yO/50jPVfzknfyON8efNKqMjQkFCPW_qbQis6ARk1k</image>
+                <cost>
+                    <price>Free</price>
+                    <description></description>
+                </cost>
+                <venue>
+                    <name>Admin UI Stadium</name>
+                    <id></id>
+                    <address>851</address>
+                    <apartment></apartment>
+                    <street>Campus Drive</street>
+                    <city>Moscow</city>
+                    <state>ID</state>
+                    <zip>83844</zip>
+                    <latitude>46.7256342</latitude>
+                    <longitude>-117.0105492</longitude>
+                </venue>
+
+        </event>
+    </events>
+</root>

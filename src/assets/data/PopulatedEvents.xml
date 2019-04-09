@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8" ?>
+  <rss version="2.0" xmlnsfn="https//www.publishwithfoundation.com/rss/2.0">
+  <channel>
+    <title>Inland360APP</title>
+    <link>https://inland360.com/</link>
+    <description>Demonstration of different kinds of events as output by the Foundation event feed.</description>
+
+      <item>
+        <fnoid>3736307</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Potluck on Monday</title>
+        <fntitle> Potluck on Monday </fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Get together with food</description>
+        <fndescription> Get together with food </fndescription>
+          <fnartist>No Artist</fnartist>
+        <fnprice>Free</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736291</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736292</fncategory_oid>
+          </fnevent_category>
+
+
+
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          04:01:00 PM
+        </fnsort_time>
+        <fndisplay_time>
+          Mondays, 4:01 p.m. April 1, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318313</fnoid>
+          <fnname>DesertNet</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+
+
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736302</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Clean the lab</title>
+        <fntitle>Clean the lab</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Clean the lab</description>
+        <fndescription>Clean the lab</fndescription>
+          <fnartist>Casey Blamires</fnartist>
+        <fnprice>2.00</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736293</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736294</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          10:30:00 AM
+        </fnsort_time>
+        <fndisplay_time>
+          Friday, 10:30 a.m. April 5, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318314</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736303</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Capstone Class</title>
+        <fntitle>Capstone Class</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Capstone Class</description>
+        <fndescription>Capstone Class</fndescription>
+          <fnartist>Nina Peterson</fnartist>
+        <fnprice>Tuition</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736295</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736296</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          10:30:00 AM
+        </fnsort_time>
+        <fndisplay_time>
+          Monday, 10:30 a.m. April 1, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318315</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736304</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Capstone Class</title>
+        <fntitle>Capstone Class</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Capstone Class</description>
+        <fndescription>Capstone Class</fndescription>
+          <fnartist>Nina Peterson</fnartist>
+        <fnprice>Tuition</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736297</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736298</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          10:30:00 AM
+        </fnsort_time>
+        <fndisplay_time>
+          Wednesday, 10:30 a.m. April 3, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318316</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736305</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Kings Match</title>
+        <fntitle>Kings Match</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Drink fun with everyone</description>
+        <fndescription>Drinking fun with everyone</fndescription>
+          <fnartist>Cynthia L Pemberton</fnartist>
+        <fnprice>BYOB</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736299</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736300</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          09:30:00 PM
+        </fnsort_time>
+        <fndisplay_time>
+          Friday, 09:30 p.m. April 5, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318317</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736306</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Bedtime</title>
+        <fntitle>Bedtime</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Go to bed early so you’re not tired in class</description>
+        <fndescription>Go to bed early so you’re not tired in class</fndescription>
+          <fnartist>Mister Sandman</fnartist>
+        <fnprice>REM</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736301</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736302</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          10:00:00 PM
+        </fnsort_time>
+        <fndisplay_time>
+          Friday, 10:00 p.m. March 31, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318318</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736307</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Cat Parade</title>
+        <fntitle>Cat Parade</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Cats marching in step on campus</description>
+        <fndescription>Cats marching in step on campus</fndescription>
+          <fnartist>Mister Whiskers</fnartist>
+        <fnprice>Catnip</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736303</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736304</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          10:00:00 AM
+        </fnsort_time>
+        <fndisplay_time>
+          Tuesday, 10:00 a.m. April 2, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318319</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736308</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Paintball War</title>
+        <fntitle>Paintball War</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Everyone is a target paintball anarchy</description>
+        <fndescription>Everyone is a target paintball anarchy</fndescription>
+          <fnartist>none</fnartist>
+        <fnprice>Free</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736305</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736306</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          07:00:00 AM
+        </fnsort_time>
+        <fndisplay_time>
+          Thursday, 07:00 a.m. April 4, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318320</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736309</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Demon Summoning</title>
+        <fntitle>Demon Summoning</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Occult gathering</description>
+        <fndescription>Occult gathering</fndescription>
+          <fnartist>Satan</fnartist>
+        <fnprice>Your Soul</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736307</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736308</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          11:59:59 PM
+        </fnsort_time>
+        <fndisplay_time>
+          Saturday, 11:59 p.m. April 6, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318321</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736310</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Lottery Picks</title>
+        <fntitle>Lottery Picks</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Occult gathering to find tomorrows lead in the summoning</description>
+        <fndescription>Occult gathering to find tomorrows lead in the summoning</fndescription>
+          <fnartist>None</fnartist>
+        <fnprice>Free</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736309</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736310</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          11:59:59 PM
+        </fnsort_time>
+        <fndisplay_time>
+          Friday, 11:59 p.m. April 5, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318322</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+      <item>
+        <fnoid>3736311</fnoid>
+        <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+        <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+        <title>Date on week before</title>
+        <fntitle>date on week before</fntitle>
+        <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+        <description>Occult gathering to find tomorrows lead in the summoning</description>
+        <fndescription>Occult gathering to find tomorrows lead in the summoning</fndescription>
+          <fnartist>Manwar</fnartist>
+        <fnprice>1000</fnprice>	
+        <fnphone>(123) 456-7890</fnphone>
+        <fnurl>https://example.net/</fnurl>
+          <fnevent_category>
+            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_oid>3736313</fnsection_oid>
+            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_oid>3736314</fncategory_oid>
+          </fnevent_category>
+          <fnfeature>Staff Pick</fnfeature>
+          <fnfeature>Members Pick</fnfeature>
+          <fnfeature>Tickets Available</fnfeature>
+        <fnsort_time>
+          12:00:00 PM
+        </fnsort_time>
+        <fndisplay_time>
+          Saturday, 12:00 p.m. March 30, 2019
+        </fndisplay_time>
+        <fnlocation>
+          <fnoid>3318323</fnoid>
+          <fnname>Lewis Clark State College</fnname>
+          <fnaddress>500 8th Avenue</fnaddress>
+          <fnaddress_supplement></fnaddress_supplement>
+          <fncity>Lewiston</fncity>
+          <fnstate>ID</fnstate>
+          <fnpostal_code>83501</fnpostal_code>
+          <fnneighborhood_group>Lewiston</fnneighborhood_group>
+          <fnneighborhood>Normal Hill</fnneighborhood>
+          <fnphone>123-456-7890</fnphone>
+          <fnlatitude> 46.41866 </fnlatitude>
+          <fnlongitude>- -117.01665 </fnlongitude>
+          <fnurl></fnurl>
+          <fndescription></fndescription>
+          <fnimage>
+        <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+        <fnposition>1</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+        <fnposition>2</fnposition>
+      </fnimage>
+      <fnimage>
+        <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+        <fnposition>3</fnposition>
+      </fnimage>
+        </fnlocation>
+        <fnsort_title>might be tickets title</fnsort_title>
+        <fnticket_url>https://example.net/tickets</fnticket_url>
+          <fntags>test</fntags>
+          <fntags>example</fntags>
+        <fnauthor></fnauthor>
+        <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+        <fncomment_count>0</fncomment_count>
+        <fnfavorite_count>0</fnfavorite_count>
+      </item>
+
+    <item>
+      <fnoid>3736311</fnoid>
+      <fncreation_date>2019-03-01 00:00:00</fncreation_date>
+      <fnlast_modified_date>2019-03-01 00:00:00</fnlast_modified_date>
+      <title>Date on week after</title>
+      <fntitle>date on week after</fntitle>
+      <link>https://www.example.net/tucson/example-all-fields-populated/Event?oid=3736301</link>
+      <description>Occult gathering to find tomorrows lead in the summoning</description>
+      <fndescription>Occult gathering to find tomorrows lead in the summoning</fndescription>
+        <fnartist>Fang</fnartist>
+      <fnprice>10000</fnprice>	
+      <fnphone>(123) 456-7890</fnphone>
+      <fnurl>https://example.net/</fnurl>
+        <fnevent_category>
+          <fnsection_name>Test Section</fnsection_name>
+          <fnsection_oid>3736315</fnsection_oid>
+          <fncategory_name>Test Category</fncategory_name>
+          <fncategory_oid>3736316</fncategory_oid>
+        </fnevent_category>
+        <fnfeature>Staff Pick</fnfeature>
+        <fnfeature>Members Pick</fnfeature>
+        <fnfeature>Tickets Available</fnfeature>
+      <fnsort_time>
+        12:00:00 PM
+      </fnsort_time>
+      <fndisplay_time>
+        Sunday, 12:00 p.m. April 8, 2019
+      </fndisplay_time>
+      <fnlocation>
+        <fnoid>3318324</fnoid>
+        <fnname>Lewis Clark State College</fnname>
+        <fnaddress>500 8th Avenue</fnaddress>
+        <fnaddress_supplement></fnaddress_supplement>
+        <fncity>Lewiston</fncity>
+        <fnstate>ID</fnstate>
+        <fnpostal_code>83501</fnpostal_code>
+        <fnneighborhood_group>Lewiston</fnneighborhood_group>
+        <fnneighborhood>Normal Hill</fnneighborhood>
+        <fnphone>123-456-7890</fnphone>
+        <fnlatitude> 46.41866 </fnlatitude>
+        <fnlongitude>- -117.01665 </fnlongitude>
+        <fnurl></fnurl>
+        <fndescription></fndescription>
+        <fnimage>
+          <fnurl>https://media2.fdncms.com/devel/imager/u/original/3501314/example.jpg</fnurl>
+          <fnposition>1</fnposition>
+        </fnimage>
+        <fnimage>
+          <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501316/example.jpg</fnurl>
+          <fnposition>2</fnposition>
+        </fnimage>
+        <fnimage>
+          <fnurl>https://media1.fdncms.com/devel/imager/u/original/3501317/example.png</fnurl>
+          <fnposition>3</fnposition>
+        </fnimage>
+      </fnlocation>
+      <fnsort_title>might be tickets title</fnsort_title>
+      <fnticket_url>https://example.net/tickets</fnticket_url>
+        <fntags>test</fntags>
+        <fntags>example</fntags>
+      <fnauthor></fnauthor>
+      <fnaverage_user_rating>0.00000</fnaverage_user_rating>
+      <fncomment_count>0</fncomment_count>
+      <fnfavorite_count>0</fnfavorite_count>
+    </item>
+  </channel>
+</rss>
