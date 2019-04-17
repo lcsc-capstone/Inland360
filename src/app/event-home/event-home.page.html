@@ -1,127 +1,120 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Events A</ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+    <ion-title>Events</ion-title>
   </ion-toolbar>
+  <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
+  <ion-searchbar></ion-searchbar>
+  <nav>
+    <ul class="eventBar">
+      <li>Categories</li>
+      <li>Full Calendar</li>
+      <li>Add Event</li>
+    </ul>
+  </nav>
 </ion-header>
 
 <ion-content padding>
-  <ion-header>
-    <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
-    <ion-searchbar></ion-searchbar>
-    <nav class="event">
-      <ul class="eventBar">
-        <li>Categories</li>
-        <li>Full Calendar</li>
-        <li>Add Event</li>
-      </ul>
-    </nav>
-  </ion-header>
-
   <main>
-    <div class="styleA">
-      <h2 class="date">Monday 28, 2019</h2>
-
-      <div class="event">
-        <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
-        <a href="#">
-        <p class="eventTime">9:00 pm</p>
-        <h3 class="eventName">Open mic</h3>
-        <p class="eventLocation">Moscow-Pullman</p>
-        <section class="eventDescription">
-          <p>Pullman’s longest running open mic.  We welcome all talents and skill levels.  Sign ups start at 9 pm</p>
-        </section>
-        <p class="eventPrice">Price: Free</p>
-        </a>
-      </div>
-       
-    </div>
-
-    <div class="styleA">
-      <h2 class="date">Tuesday 29, 2019</h2>
-      <div class="event">
-        <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
-        <p class="eventTime">99:99 pm</p>
-        <h3 class="eventName">Intuitive Eating Program</h3>
-        <p class="eventLocation">Moscow-Pullman</p>
-        <section class="eventDescription">
-          <p><b>STOP THE WAR WITH FOOD</b></p>
-          <p>
-          Learn Intuitive Eating and finally make peace with yourself! Intuitive Eating is an approach that teaches you how to create a healthy relationship with your food, mind, and body—where you ultimately become the expert of your own body. You learn how to distinguish between physical and emotional feelings, and gain a sense of body wisdom—so that you no longer have constant food worry thoughts. Join this 11-week program to learn the 10 Principles of Intuitive Eating and make peace with food once and for all. This class is now offered in two different sessions to meet your scheduling needs!</p>
-          <br>
-          <br>
-          <p><b>TWO NEW SESSIONS STARTING JANUARY 29, 2019</b></p>
-          <br>
-          Class 1: Tuesdays • 2:00pm - 3:00pm
-          <br>
-          Class 2: Tuesdays • 5:30pm - 6:30pm
-          <br>
-          11-Week Program • $149.00/person
-          <br>
-          <br>
-          Reserve Your Space Today!
-          <br>
-          Jennifer Raykovich, RDN, LD, CD
-          <br>
-          Tri-State Clinical Nutrition
-          <br>
-          509.758.5511 ext. 5170 
-          <br>
-          JRaykovich@tsmh.org
-          <br>
-        </section>
-        <p class="eventPrice">Price: $149</p>
-      </div>
-
-      <div class="event">
-          <ion-img id="whole" src="../../assets/Reid.jpg" alt="image placeholder" class="eventImg"></ion-img>
-          <p class="eventTime">99:99 pm</p>
-          <h3 class="eventName">U of I Faculty Recital - James Reid, guitar </h3>
-          <p class="eventLocation">Moscow-Pullman</p>
+    <div>
+      <ion-list>
+        <ion-item *ngFor="let item of arr" class="event" (click)=goEventDetails(item)>
+          <ion-thumbnail>
+            <ion-img src="../../assets/openMicNight.jpg" alt=""></ion-img>
+          </ion-thumbnail>
+          <ion-label class="infoLabel">
+            <p class="eventTime">{{item.displayTime}}</p>
+            <br>
+            <h3 class="eventName">{{ item.title }}</h3>
+            <p class="eventLocation">{{ item.location.name }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <!-- <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= todaysDate && oneOut > item.date">{{item.date}}</h2>
+        <div *ngIf="item.date >= todaysDate && oneOut > item.date" (click)=goEventDetails(item)  class="event">
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
           <section class="eventDescription">
-            <p>
-              The Lionel Hampton School of Music at the University of Idaho presents James Reid, guitar. Professor Reid is Professor of Guitar and Graduate Student Coordinator. 
-            </p>
-            <p>
-              Tickets available at the door, $5 for adults, $3 for students and senior citizens.   
-            </p>  
+            <p>{{item.description}}</p>
           </section>
-          <p class="eventPrice">Price: $3 - $5</p>
+          <p class="eventPrice">{{item.price}}</p>
         </div>
+      </ng-container> -->
+      <!-- <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= oneOut && twoOut > item.date">{{item.displayTime}}</h2>
+        <div *ngIf="item.date >= todaysDate && oneOut > item.date" class="event" (click)=goEventDetails(item)>
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{item.description}}</p>
+          </section>
+          <p class="eventPrice">{{item.price}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= threeOut && fourOut > item.date">{{item.displayTime}}</h2>
+        <div *ngIf="item.date >= threeOut && fourOut > item.date" class="event" (click)=goEventDetails(item)>
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{item.description}}</p>
+          </section>
+          <p class="eventPrice">{{item.price}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= fourOut && fiveOut > item.date">{{item.displayTime}}</h2>
+        <div *ngIf="item.date >= fourOut && fiveOut > item.date" class="event" (click)=goEventDetails(item)>
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{item.description}}</p>
+          </section>
+          <p class="eventPrice">{{item.price}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let item of arr">
+        <h2 class="date" *ngIf="item.date >= fiveOut && sixOut > item.date">{{item.displayTime}}</h2>
+        <div *ngIf="item.date >= fiveOut && sixOut > item.date" class="event" (click)=goEventDetails(item)>
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <p class="eventTime">{{item.displayTime}}</p>
+          <h3 class="eventName">{{item.title}}</h3>
+          <p class="eventLocation">{{item.location.name}}</p>
+          <section class="eventDescription">
+            <p>{{item.description}}</p>
+          </section>
+          <p class="eventPrice">{{item.price}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let item of arr">
+        <ion-list *ngIf="item.date >= sixOut && sevenOut > item.date">
+          <h2 class="date">{{item.displayTime}}</h2>
+          <ion-item>
+            <div *ngIf="item.date >= sixOut && sevenOut > item.date" class="event">
+              <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+              <p class="eventTime">{{item.displayTime}}</p>
+              <h3 class="eventName">{{item.title}}</h3>
+              <p class="eventLocation">{{item.location.name}}</p>
+              <section class="eventDescription">
+                <p>{{item.description}}</p>
+              </section>
+              <p class="eventPrice">{{item.price}}</p>
+            </div>
+          </ion-item>
+        </ion-list>
+      </ng-container>-->
     </div>
-
-    <div class="styleA">
-      <h2 class="date">Wednesday 30, 2019</h2>
-      <div class="event">
-        
-        <ion-img id="whole" src="../../assets/Wed.jpg" alt="image placeholder" class="eventImg"></ion-img>
-        <p class="eventTime">99:99 pm</p>
-        <h3 class="eventName">Hyperspud & The University of Idaho present: Backcountry Film Festival</h3>
-        <p class="eventLocation">Moscow-Pullman</p>
-        <section class="eventDescription">
-          <p>The Backcountry Film Festival is a celebration of the human-powered experience and a gathering place for the backcountry snowsports community. Funds raised at each screening stay in the local community to support human-powered recreation and conservation efforts, winter education and avalanche/safety programs and to raise awareness of winter management issues.
-          <br>
-            All proceeds from the Backcountry Film Festival will support the work of the Wallowa Avalanche Center.
-          </p>
-        </section>
-        <p class="eventPrice">Price: $10</p>
-      </div>
-
-      <div class="event">
-        
-        <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
-        <p class="eventTime">99:99 pm</p>
-        <h3 class="eventName">Up Chimacum Creek</h3>
-        <p class="eventLocation">Moscow-Pullman</p> 
-        <section class="eventDescription">
-          <p>U of I Theatre Arts presents a coming of age story about life, love and loss in the Pacific Northwest. As young Willie Almeida and his friends return from a fishing trip, they witness an event that has a powerful and lasting impression on all of them. This life changing moment is as surprising as it is shocking. Written by Ben Gonzales and directed by Justin Cerne. Contains adult language and situations. Free for U of I students. $10-$15 public. Tickets at 208-885-6465 or Shoup Hall, suite 201 or at the door 30 minutes before curtain.</p>
-        </section>
-        <p class="eventPrice">Price: $0 - $15</p>
-      </div>
-    </div>
-
   </main>
 
   <ion-footer>
