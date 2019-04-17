@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { EventsDataService } from '../events-data.service';
-import { getLocaleDateFormat } from '@angular/common';
 import { EventData } from '../eventData';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
@@ -14,7 +13,6 @@ import { NavController } from '@ionic/angular';
 
 export class HomePage implements OnInit{
 
-  private selectedItem: any;
   public items: Array<{ title: string; note: string; icon: string }> = [];
   public eventsxmldata: any;
   public readingIn: ["Testing...?", "I'm trying..."];
@@ -33,12 +31,6 @@ export class HomePage implements OnInit{
     'Share Your Snaps A',
     'Weekly Publication',
     'Add Event'
-  ];
-
-  private data = [
-    {path: "event-list", icon: "flask", title: "Events"},
-    {path: "snaps-a", icon: "wifi", title: "Share Your Snaps"},
-    {path: "event-a", icon: "paper-plane", title: "Testing Drop"}
   ];
 
   private icons = [
@@ -94,6 +86,7 @@ export class HomePage implements OnInit{
   }
 
   ngOnInit() {
+    this.eventservice.loadXML();
     // this.eventservice.loadXML();
     // console.log("Start?");
     // this.eventsxmldata = this.eventservice.xmlItems;

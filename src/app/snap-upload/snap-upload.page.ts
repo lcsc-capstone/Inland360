@@ -16,7 +16,7 @@ declare var window;
 })
 export class SnapUploadPage implements OnInit {
 
-   login_username : string = "";ç
+   login_username : string = "";
    login_password : string = "";
    image_name : string = "";
    image_description : string = "";
