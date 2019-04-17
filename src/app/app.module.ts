@@ -8,8 +8,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { EventsDataService } from './events-data.service';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http'; 
 
-import { IonicStorageModule } from '@ionic/storage';
+import { InAppBrowser, InAppBrowserEvent, InAppBrowserObject } from '@ionic-native/in-app-browser/ngx';
+import { Camera } from '@ionic-native/camera/ngx';
+import { PhotoLibrary } from '@ionic-native/photo-library/ngx';
+import { File } from '@ionic-native/File/ngx';
+import { Calendar } from '@ionic-native/calendar/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,11 +26,19 @@ import { IonicStorageModule } from '@ionic/storage';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    IonicStorageModule.forRoot()
+    HttpModule,
+    HttpClientModule
   ],
   providers: [
     StatusBar,
+    EventsDataService,
     SplashScreen,
+    Camera,
+    PhotoLibrary,
+    InAppBrowser,
+    Calendar,
+    HttpClient,
+    File,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
