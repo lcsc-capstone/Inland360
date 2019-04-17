@@ -7,41 +7,46 @@
       Inland 360
     </ion-title>
   </ion-toolbar>
+  <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
+  <ion-searchbar [(ngModel)]="searchQuery" (ionInput)="getEvents($event)" (ionClear)="resetList($event)"></ion-searchbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-header>
-    <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
-    <ion-searchbar></ion-searchbar>
-  </ion-header>
-
+  <ion-list>
+      <ion-item *ngFor="let item of readingIn">
+        {{item}}
+      </ion-item>
+    </ion-list>
   <main>
-    <div>
-      <ion-img src="../../assets/openMicNight.jpg" alt="main image placeholder" id ="mainImg"></ion-img>
-      <h2>Events Calendar</h2>
-      <p>Pullman’s longest running open mic.  We welcome all talents and skill levels.  Sign ups start at 9 pm</p>
-      <p>View more</p>
-      <br>
-      <p>Have a way to add events to user's device</p>
-      <p>https://www.spingo.com/submit/?partnerId=2257</p>
-
-      <br>
-
-      <p><a href="../event-a/event-a.module#EventAPageModule'">Go to the event page?</a></p>
-    </div>
+    <h1><ion-item [routerLink]="'/event-home'" routerDirection="forward">Upcoming Events</ion-item></h1>
+    <ion-slides pager="true" [options]="slideOpts">
+      <ng-container *ngIf="items">
+        <ng-container *ngFor= "let item of eventsxmldata">
+          <ion-slide *ngIf="item.date >= todaysDate && weekOut >= item.date">
+            <div (click)=goEventDetails(item)>
+              <ion-img src="../../assets/openMicNight.jpg" alt="main image placeholder" id="mainImg"></ion-img>
+              <h2>{{item.title}}</h2>
+              <p>{{item.location.name}}</p>
+              <p>{{item.sortTime}}</p>
+              <br>
+              <br>
+            </div>
+          </ion-slide>
+        </ng-container>
+      </ng-container>
+    </ion-slides>   
     <div>
       <ion-img src="https://s3.amazonaws.com/FringeBucket/image_placeholder.png" alt="main image placeholder" id ="mainImg"></ion-img>
-    <h2>Share Your Snaps</h2>
-      <p>https://inland360.com/share-your-snaps/</p>
+    <h2><ion-item [routerLink]="'/snaps-home'" routerDirection="forward">Share Your Snaps</ion-item></h2>
     </div>
     <div>
       <ion-img src="https://s3.amazonaws.com/FringeBucket/image_placeholder.png" alt="main image placeholder" id ="mainImg"></ion-img>
     <h2>Weekly Publication</h2>
       <p>Not sure about this one yet...</p>
-  </div>
+    </div>
     <div>
       <ion-img src="https://s3.amazonaws.com/FringeBucket/image_placeholder.png" alt="main image placeholder" id ="mainImg"></ion-img>
-      <h2>Adding a community event</h2>
+      <h2><ion-item [routerLink]="'/add-event'" routerDirection="forward">Adding a community event</ion-item></h2>
       <p>Make this function more user friendly</p>
     </div>
   </main>
