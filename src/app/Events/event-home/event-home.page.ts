@@ -6,8 +6,7 @@ import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-event-home',
-  templateUrl: './event-home.page.html',
-  styleUrls: ['./event-home.page.scss'],
+  templateUrl: './event-home.page.html'
 })
 export class EventHomePage implements OnInit {
 

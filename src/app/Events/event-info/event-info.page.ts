@@ -9,8 +9,7 @@ import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-event-info',
-  templateUrl: './event-info.page.html',
-  styleUrls: ['./event-info.page.scss'],
+  templateUrl: './event-info.page.html'
 })
 export class EventInfoPage implements OnInit {
   

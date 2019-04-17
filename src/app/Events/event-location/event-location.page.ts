@@ -9,8 +9,7 @@ import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-event-location',
-  templateUrl: './event-location.page.html',
-  styleUrls: ['./event-location.page.scss'],
+  templateUrl: './event-location.page.html'
 })
 export class EventLocationPage implements OnInit {
   public ID;

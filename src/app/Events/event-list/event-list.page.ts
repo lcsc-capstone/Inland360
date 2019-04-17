@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-event-list',
-  templateUrl: './event-list.page.html',
-  styleUrls: ['./event-list.page.scss'],
+  templateUrl: './event-list.page.html'
 })
 export class EventListPage implements OnInit {
   private selectedItem: any;
