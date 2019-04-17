@@ -21,9 +21,9 @@ const routes: Routes = [
   { path: 'event-location/:id', loadChildren: './Events/event-location/event-location.module#EventLocationPageModule' },
   { path: 'event-categories', loadChildren: './Events/event-categories/event-categories.module#EventCategoriesPageModule' },
   { path: 'import-calendar', loadChildren: './import-calendar/import-calendar.module#ImportCalendarPageModule' },
-  { path: 'snaps-home', loadChildren: './snaps-home/snaps-home.module#SnapsHomePageModule' },
-  { path: 'snaps-upload', loadChildren: './snaps-upload/snaps-upload.module#SnapsUploadPageModule' },
-  { path: 'snaps-list', loadChildren: './snaps-list/snaps-list.module#SnapsListPageModule' },
+  { path: 'snaps-upload', loadChildren: './Snaps/snaps-upload/snaps-upload.module#SnapsUploadPageModule' },
+  { path: 'snaps-list', loadChildren: './Snaps/snaps-list/snaps-list.module#SnapsListPageModule' },
+  { path: 'snaps-home', loadChildren: './Snaps/snaps-home/snaps-home.module#SnapsHomePageModule' },
   { path: 'add-event', loadChildren: './Events/add-event/add-event.module#AddEventPageModule' },
 
 ];
