@@ -36,11 +36,12 @@ ion-header {
   }
 }
 ion-footer  {
-  margin: 0px;
+  margin: auto;
   background-color:  #232323;
   color: white;
-  width: 90%;
-  padding: 5%;
+  width: 100%;
+  padding: 0%;
+  text-align: center;
   p {
     color: #9c9ea1;
   }
@@ -126,12 +127,12 @@ ion-searchbar {
   display: none;
 }
 ion-thumbnail {
-  //--size: 80px !important;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .infoLabel {
   margin-left: 5px;
+  margin-top: 0px !important;
 }
 
 ion-input {
@@ -226,11 +227,7 @@ ion-button{
   width: 30%;
 }
 
-// .styleA
-// {
-//     border: none;
-//     overflow: hidden;
-// }
+// share your snaps
 .snapsTopic
 {
   background-color: #232323;
