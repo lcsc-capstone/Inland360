@@ -15,12 +15,9 @@
 
 /** styles for the entire app **/
 
-* {
-  margin: 0;
-}
 main {
   background-color: white;
-  margin: 5%;
+  // margin: 5%;
 }
 // ion-img {
 //   width: 90%;
@@ -39,11 +36,12 @@ ion-header {
   }
 }
 ion-footer  {
-  margin: 0px;
+  margin: auto;
   background-color:  #232323;
   color: white;
-  width: 90%;
-  padding: 5%;
+  width: 100%;
+  padding: 0%;
+  text-align: center;
   p {
     color: #9c9ea1;
   }
@@ -94,39 +92,47 @@ ion-searchbar {
 } 
 .event
 {
-  background-color: #F2F2F2;
+  background-color: #F2F2F2 !important;
   width: 100%;
   align-content: center;
   //margin: auto;
   overflow: hidden;
-  .eventImg
-  {
-    width: 40%;
-    float: left;
-  } 
-    .eventName {
-    font-size: 1em;
-    vertical-align: middle;
-    //margin: auto;
-    padding: auto;
-  }
-  .eventLocation {
-    font-size: .75em;
-    vertical-align: middle;
-    //margin: auto;
-    padding: auto;
-  }
-  .eventTime {
-    background-color: #707070;
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    float: right;
-  }
-  .eventDescription, .eventPrice
-  {
-    display: none;
-  }
+}
+.eventImg
+{
+  width: 40%;
+  float: left;
+} 
+.eventName {
+  font-size: 1em;
+  vertical-align: middle;
+  //margin: auto;
+  padding: auto;
+}
+.eventLocation {
+  font-size: .75em;
+  vertical-align: middle;
+  //margin: auto;
+  padding: auto;
+}
+.eventTime {
+  background-color: #707070;
+  color: white !important;
+  padding-left: 5px;
+  padding-right: 5px;
+  float: right;
+}
+.eventDescription, .eventPrice
+{
+  display: none;
+}
+ion-thumbnail {
+  width: 80px;
+  height: 80px;
+}
+.infoLabel {
+  margin-left: 5px;
+  margin-top: 0px !important;
 }
 
 ion-input {
@@ -221,12 +227,8 @@ ion-button{
   width: 30%;
 }
 
-.styleA
-{
-    border: none;
-    overflow: hidden;
-}
-.styleA .snapsTopic
+// share your snaps
+.snapsTopic
 {
   background-color: #232323;
   color: #FBAD19;
@@ -234,14 +236,10 @@ ion-button{
   padding: 1em;
   text-align: center;
 }
-.styleA .snapsImg
+.snapsImg
 {
-    max-width: 25%;
+    max-width: 33.33%;
     padding: 2.5%;
     display: inline-block;
-    text-align: center;
-}
-
-ion-item {
-  border: 0px;
+    //text-align: center;
 }
