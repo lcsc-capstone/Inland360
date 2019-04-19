@@ -13,11 +13,11 @@ export class EventCategoriesPage implements OnInit {
     {path: "", icon: "wifi", title: "Books and Authors"},
     {path: "", icon: "paper-plane", title: "Clubs and Organization"},
     {path: "", icon: "paper-plane", title: "Fairs and Festivals"},
-    {path: "", ion: "build", title: "Food and Drink"},
-    {path: "", ion: "build", title: "Kids and Families"},
-    {path: "", ion: "build", title: "Misc."},
-    {path: "", ion: "build", title: "Movies"},
-    {path: "", ion: "build", title: "Music"}
+    {path: "", icon: "build", title: "Food and Drink"},
+    {path: "", icon: "build", title: "Kids and Families"},
+    {path: "", icon: "build", title: "Misc."},
+    {path: "", icon: "build", title: "Movies"},
+    {path: "", icon: "build", title: "Music"}
   ];
 
   private icons = [
