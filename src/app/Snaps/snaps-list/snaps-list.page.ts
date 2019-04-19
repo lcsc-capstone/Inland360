@@ -10,15 +10,15 @@ export class SnapsListPage implements OnInit {
   private selectedItem: any;
 
   private data = [
-    {path: "snaps-home", icon: "flask", title: "Snaps main page"},
-    {path: "snaps-upload", icon: "wifi", title: "Upload a photo"},
+    {path: "snaps-home", icon: "images", title: "Snaps main page"},
+    {path: "snaps-upload", icon: "cloud-upload", title: "Upload a photo"},
   ];
 
   private icons = [
     'flask',
     'wifi',
-    'beer',
-    'football',
+    'cloud-upload',
+    'images',
     'basketball',
     'paper-plane',
     'american-football',

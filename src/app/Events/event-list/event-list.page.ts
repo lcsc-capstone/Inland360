@@ -8,18 +8,18 @@ export class EventListPage implements OnInit {
   private selectedItem: any;
 
   private data = [
-    {path: "import-calendar", icon: "flask", title: "Import Calendar"},
-    {path: "add-event", icon: "wifi", title: "Add Event"},
-    {path: "event-home", icon: "paper-plane", title: "Upcoming Events"},
-    {path: "event-categories", icon: "paper-plane", title: "Categories"},
-    {path: "", icon: "build", title: "Full Calendar"}
+    {path: "import-calendar", icon: "calendar", title: "Import Calendar"},
+    {path: "add-event", icon: "add", title: "Add Event"},
+    {path: "event-home", icon: "paper", title: "Upcoming Events"},
+    {path: "event-categories", icon: "apps", title: "Categories"}
+    //{path: "", icon: "build", title: "Full Calendar"}
   ];
 
   private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
+    'apps',
+    'paper',
+    'add',
+    'calendar',
     'basketball',
     'paper-plane',
     'american-football',

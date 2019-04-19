@@ -18,12 +18,12 @@ export class AppComponent {
     {
       title: 'Events',
       url: '/event-list',
-      icon: 'list'
+      icon: 'today'
     },
     {
       title: 'Share Your Snaps',
       url: '/snaps-list',
-      icon: 'list'
+      icon: 'aperture'
     }
   ];
 
