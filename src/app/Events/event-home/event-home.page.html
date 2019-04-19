@@ -8,18 +8,31 @@
   <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
   <ion-searchbar></ion-searchbar>
   <nav>
-      <ul class="eventBar">
-        <li>Categories</li>
-        <li>Full Calendar</li>
-        <li>Add Event</li>
-      </ul>
-    </nav>
+    <ul class="eventBar">
+      <li>Categories</li>
+      <li>Full Calendar</li>
+      <li>Add Event</li>
+    </ul>
+  </nav>
 </ion-header>
 
 <ion-content padding>
   <main>
-    <div class="styleA">
-      <ng-container *ngFor="let item of arr">
+    <div>
+      <ion-list>
+        <ion-item *ngFor="let item of arr" class="event" (click)=goEventDetails(item)>
+          <ion-thumbnail>
+            <ion-img src="../../assets/openMicNight.jpg" alt=""></ion-img>
+          </ion-thumbnail>
+          <ion-label class="infoLabel">
+            <p class="eventTime">{{item.displayTime}}</p>
+            <br>
+            <h3 class="eventName">{{ item.title }}</h3>
+            <p class="eventLocation">{{ item.location.name }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <!-- <ng-container *ngFor="let item of arr">
         <h2 class="date" *ngIf="item.date >= todaysDate && oneOut > item.date">{{item.date}}</h2>
         <div *ngIf="item.date >= todaysDate && oneOut > item.date" (click)=goEventDetails(item)  class="event">
           <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
@@ -31,8 +44,8 @@
           </section>
           <p class="eventPrice">{{item.price}}</p>
         </div>
-      </ng-container>
-      <ng-container *ngFor="let item of arr">
+      </ng-container> -->
+      <!-- <ng-container *ngFor="let item of arr">
         <h2 class="date" *ngIf="item.date >= oneOut && twoOut > item.date">{{item.displayTime}}</h2>
         <div *ngIf="item.date >= todaysDate && oneOut > item.date" class="event" (click)=goEventDetails(item)>
           <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
@@ -100,7 +113,7 @@
             </div>
           </ion-item>
         </ion-list>
-      </ng-container>
+      </ng-container>-->
     </div>
   </main>
 
