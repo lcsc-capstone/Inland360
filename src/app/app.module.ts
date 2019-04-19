@@ -13,9 +13,6 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http'; 
 
 import { InAppBrowser, InAppBrowserEvent, InAppBrowserObject } from '@ionic-native/in-app-browser/ngx';
-import { Camera } from '@ionic-native/camera/ngx';
-import { PhotoLibrary } from '@ionic-native/photo-library/ngx';
-import { File } from '@ionic-native/File/ngx';
 import { Calendar } from '@ionic-native/calendar/ngx';
 
 
@@ -33,12 +30,9 @@ import { Calendar } from '@ionic-native/calendar/ngx';
     StatusBar,
     EventsDataService,
     SplashScreen,
-    Camera,
-    PhotoLibrary,
     InAppBrowser,
     Calendar,
     HttpClient,
-    File,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
