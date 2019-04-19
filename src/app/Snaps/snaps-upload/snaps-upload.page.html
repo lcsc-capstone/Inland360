@@ -13,17 +13,20 @@
       <ion-searchbar></ion-searchbar>
     </ion-header>
     <main>
+
+      <h1>Create Account</h1>
+      <p>(required for Share your Snaps)</p>
+      <button ion-button (click) = "createAccount()">create account</button> <br>
       <h1>Upload</h1>
       <ion-input type="text" name = "username" placeholder = "username or email" [(ngModel)]="login_username"></ion-input>
       <ion-input type="password" name = "password" placeholder = "password" [(ngModel)]="login_password"></ion-input>
 
-      <ion-input type="text" name = "image name" placeholder = "image name" [(ngModel)]="image_name"></ion-input>
-      <ion-input type="text" name = "image description" placeholder = "image description" [(ngModel)]="image_description"></ion-input>
-      <ion-input type="text" name = "contact email address" placeholder = "contact email" [(ngModel)]="contact_email"></ion-input>
-      <ion-input type="text" name = "contact number" placeholder = "contact phone" [(ngModel)]="contact_number"></ion-input>
+      <ion-input type="text" name = "image name" id = "image_name" placeholder = "image name" [(ngModel)]="image_name"></ion-input>
+      <ion-input type="text" name = "image description" id = "image_description" placeholder = "image description" [(ngModel)]="image_description"></ion-input>
+      <ion-input type="text" name = "contact email address" id = "contact_email" placeholder = "contact email" [(ngModel)]="contact_email"></ion-input>
+      <ion-input type="text" name = "contact number" id = "contact_number" placeholder = "contact phone" [(ngModel)]="contact_number"></ion-input>
 
-      <button ion-button (click) = "takePhoto()">Take Photo</button> <br>
-      <button ion-button (click) = "browsePhotos()">Browse Photos</button> <br>
+      <button ion-button (click) = "uploadMyPhoto()">go to photo upload</button> <br>
       <div class = "insert"></div>
     </main>
     <ion-footer>
