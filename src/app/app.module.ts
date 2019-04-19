@@ -11,7 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { EventsDataService } from './events-data.service';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http'; 
-
+import { SpinnerDialog } from '@ionic-native/spinner-dialog/ngx';
 import { InAppBrowser, InAppBrowserEvent, InAppBrowserObject } from '@ionic-native/in-app-browser/ngx';
 import { Calendar } from '@ionic-native/calendar/ngx';
 
@@ -30,6 +30,7 @@ import { Calendar } from '@ionic-native/calendar/ngx';
     StatusBar,
     EventsDataService,
     SplashScreen,
+    SpinnerDialog,
     InAppBrowser,
     Calendar,
     HttpClient,
