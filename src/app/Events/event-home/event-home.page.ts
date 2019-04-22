@@ -76,4 +76,23 @@ export class EventHomePage implements OnInit {
     this.sixOut.setDate(this.sixOut.getDate() + 6);
     this.sevenOut.setDate(this.sevenOut.getDate() + 7);
   }
+
+  getEvents(event)
+   {
+    this.arr = this.events.xmlItems;
+     let queryString = event.target.value;
+     if(queryString != undefined)
+     {
+       if(queryString.trim() == '')
+       {
+         return;
+       }
+       this.arr = this.events.getFilteredEventsTitle(queryString);
+     }
+   }
+
+   resetList()
+   {
+    this.arr = this.events.xmlItems;
+   }
 }

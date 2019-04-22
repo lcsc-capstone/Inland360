@@ -79,9 +79,7 @@ export class HomePage implements OnInit{
       {
         return;
       }
-      this.eventservice.getFilteredEvents(queryString).then(theResult => {
-        this.events = theResult;
-      })
+      this.events = this.eventservice.getFilteredEventsTitle(queryString);
     }
   }
 

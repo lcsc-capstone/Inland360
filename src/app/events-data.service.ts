@@ -24,20 +24,34 @@ export class EventsDataService {
     
   }
 
-  getFilteredEvents(queryString)
+  getFilteredEventsTitle(queryString)
   {
-      return this.xmlItems.then(Events => {
-          let theFilteredEvents: any = [];
+    var filteredXmlEvents = [];
+    var count = 0;
+    for (let theEvent of this.xmlItems)
+    {
+        if(theEvent.title.toLowerCase().indexOf(queryString.toLowerCase())> -1)
+        {
+          filteredXmlEvents[count] = theEvent;
+          count ++;
+        }
+    }
+    return filteredXmlEvents;
+  }
 
-          for (let theEvent of Events)
-          {
-              if(theEvent.title.toLowerCase().indexOf(queryString.toLowerCase())> -1)
-              {
-                  theFilteredEvents.push(theEvent);
-              }
-          }
-          return theFilteredEvents;
-      });
+  getFilteredEventsCategory(queryString)
+  {
+    var filteredXmlEvents = [];
+    var count = 0;
+    for (let theEvent of this.xmlItems)
+    {
+        if(theEvent.category.toLowerCase().indexOf(queryString.toLowerCase())> -1)
+        {
+          filteredXmlEvents[count] = theEvent;
+          count ++;
+        }
+    }
+    return filteredXmlEvents;
   }
 
   public getXmlItems()
@@ -110,7 +124,7 @@ export class EventsDataService {
             displayTime: item.fndisplay_time[0],
             sortTime: item.fnsort_time[0],
             date: getDate(item.fndisplay_time[0], item.fnsort_time[0]),
-            category: item.fncategory_name[0]
+            category: item.fnevent_category[0].fncategory_name[0]
           });
         }
         resolve(arr2); 
