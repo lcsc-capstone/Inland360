@@ -9,28 +9,27 @@ export class EventCategoriesPage implements OnInit {
   private selectedItem: any;
 
   private data = [
-    {path: "", icon: "flask", title: "Art and Exhibits"},
-    {path: "", icon: "wifi", title: "Books and Authors"},
-    {path: "", icon: "paper-plane", title: "Clubs and Organization"},
-    {path: "", icon: "paper-plane", title: "Fairs and Festivals"},
-    {path: "", icon: "build", title: "Food and Drink"},
-    {path: "", icon: "build", title: "Kids and Families"},
-    {path: "", icon: "build", title: "Misc."},
-    {path: "", icon: "build", title: "Movies"},
-    {path: "", icon: "build", title: "Music"}
+    {path: "", icon: "color-palette", title: "Art and Exhibits"},
+    {path: "", icon: "book", title: "Books and Authors"},
+    {path: "", icon: "happy", title: "Clubs and Organization"},
+    {path: "", icon: "flag", title: "Fairs and Festivals"},
+    {path: "", icon: "restaurant", title: "Food and Drink"},
+    {path: "", icon: "people", title: "Kids and Families"},
+    {path: "", icon: "cube", title: "Misc."},
+    {path: "", icon: "film", title: "Movies"},
+    {path: "", icon: "musical-note", title: "Music"}
   ];
 
   private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
+    'restaurant',
+    'film',
+    'musical-note',
+    'people',
+    'book',
+    'color-palette',
+    'cube',
+    'happy',
+    'flag'
   ];
   public items: Array<{ title: string; note: string; icon: string }> = [];
   constructor() {
