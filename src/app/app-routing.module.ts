@@ -20,7 +20,6 @@ const routes: Routes = [
   { path: 'event-info/:id', loadChildren: './Events/event-info/event-info.module#EventInfoPageModule' },
   { path: 'event-location/:id', loadChildren: './Events/event-location/event-location.module#EventLocationPageModule' },
   { path: 'event-categories', loadChildren: './Events/event-categories/event-categories.module#EventCategoriesPageModule' },
-  { path: 'import-calendar', loadChildren: './import-calendar/import-calendar.module#ImportCalendarPageModule' },
   { path: 'snaps-upload', loadChildren: './Snaps/snaps-upload/snaps-upload.module#SnapsUploadPageModule' },
   { path: 'snaps-list', loadChildren: './Snaps/snaps-list/snaps-list.module#SnapsListPageModule' },
   { path: 'snaps-home', loadChildren: './Snaps/snaps-home/snaps-home.module#SnapsHomePageModule' },

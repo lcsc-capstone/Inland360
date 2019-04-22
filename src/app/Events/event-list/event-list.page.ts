@@ -8,7 +8,6 @@ export class EventListPage implements OnInit {
   private selectedItem: any;
 
   private data = [
-    {path: "import-calendar", icon: "calendar", title: "Import Calendar"},
     {path: "add-event", icon: "add", title: "Add Event"},
     {path: "event-home", icon: "paper", title: "Upcoming Events"},
     {path: "event-categories", icon: "apps", title: "Categories"}

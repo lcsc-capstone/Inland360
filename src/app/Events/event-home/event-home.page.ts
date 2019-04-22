@@ -45,6 +45,18 @@ export class EventHomePage implements OnInit {
     this.router.navigate([url]); 
   }
 
+  goCategories()
+  {
+    let url = './event-categories/';
+    this.router.navigate([url]); 
+  }
+
+  addEvent()
+  {
+    let url = './add-event/';
+    this.router.navigate([url]); 
+  }
+
   ngOnInit() {
     this.arr = this.events.xmlItems;
     console.log("Starting arr...");
