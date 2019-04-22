@@ -24,6 +24,7 @@ const routes: Routes = [
   { path: 'snaps-list', loadChildren: './Snaps/snaps-list/snaps-list.module#SnapsListPageModule' },
   { path: 'snaps-home', loadChildren: './Snaps/snaps-home/snaps-home.module#SnapsHomePageModule' },
   { path: 'add-event', loadChildren: './Events/add-event/add-event.module#AddEventPageModule' },
+  { path: 'event-category-details', loadChildren: './Events/event-category-details/event-category-details.module#EventCategoryDetailsPageModule' },
 
 ];
 

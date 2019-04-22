@@ -9,15 +9,15 @@ export class EventCategoriesPage implements OnInit {
   private selectedItem: any;
 
   private data = [
-    {path: "", icon: "color-palette", title: "Art and Exhibits"},
-    {path: "", icon: "book", title: "Books and Authors"},
-    {path: "", icon: "happy", title: "Clubs and Organization"},
-    {path: "", icon: "flag", title: "Fairs and Festivals"},
-    {path: "", icon: "restaurant", title: "Food and Drink"},
-    {path: "", icon: "people", title: "Kids and Families"},
-    {path: "", icon: "cube", title: "Misc."},
-    {path: "", icon: "film", title: "Movies"},
-    {path: "", icon: "musical-note", title: "Music"}
+    {path: "event-category-details", icon: "color-palette", title: "Art and Exhibits"},
+    {path: "event-category-details", icon: "book", title: "Books and Authors"},
+    {path: "event-category-details", icon: "happy", title: "Clubs and Organization"},
+    {path: "event-category-details", icon: "flag", title: "Fairs and Festivals"},
+    {path: "event-category-details", icon: "restaurant", title: "Food and Drink"},
+    {path: "event-category-details", icon: "people", title: "Kids and Families"},
+    {path: "event-category-details", icon: "cube", title: "Misc."},
+    {path: "event-category-details", icon: "film", title: "Movies"},
+    {path: "event-category-details", icon: "musical-note", title: "Music"}
   ];
 
   private icons = [
