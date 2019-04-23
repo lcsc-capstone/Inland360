@@ -44,9 +44,7 @@ export class EventInfoPage implements OnInit {
           text: 'Okay',
           handler: () => {
             var twoHour = new Date(this.info.date.getTime());
-            //console.log("before: " + twoHour.toString());
             twoHour.setTime(twoHour.getTime()+2*60*60*1000)
-            //console.log("before: " + twoHour.toString());
           // twoHour.setDate(this.info.date.getDate() + 2);
             var date = new Date(this.info.date.getTime());
            // date.setDate(this.info.date.getDate());

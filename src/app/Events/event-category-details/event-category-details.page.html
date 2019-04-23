@@ -3,10 +3,24 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
   <ion-toolbar>
-    <ion-title>event-category-details</ion-title>
+    <ion-title>{{category}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div>
+    <ion-list>
+      <ion-item *ngFor="let item of info" class="event">
+        <ion-thumbnail>
+          <ion-img src="../../assets/openMicNight.jpg" alt=""></ion-img>
+        </ion-thumbnail>
+        <ion-label class="infoLabel">
+          <p class="eventTime">{{item.displayTime}}</p>
+          <br>
+          <h3 class="eventName">{{ item.title }}</h3>
+          <p class="eventLocation">{{ item.location.name }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

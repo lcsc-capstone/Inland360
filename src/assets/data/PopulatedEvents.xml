@@ -19,9 +19,9 @@
         <fnphone>(123) 456-7890</fnphone>
         <fnurl>https://example.net/</fnurl>
           <fnevent_category>
-            <fnsection_name>Test Section</fnsection_name>
+            <fnsection_name>Art and Exhibits</fnsection_name>
             <fnsection_oid>3736291</fnsection_oid>
-            <fncategory_name>Test Category</fncategory_name>
+            <fncategory_name>Art and Exhibits</fncategory_name>
             <fncategory_oid>3736292</fncategory_oid>
           </fnevent_category>
 

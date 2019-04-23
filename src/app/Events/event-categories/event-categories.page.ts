@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EventData } from '../../eventData';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-event-categories',
@@ -9,30 +11,19 @@ export class EventCategoriesPage implements OnInit {
   private selectedItem: any;
 
   private data = [
-    {path: "event-category-details", icon: "color-palette", title: "Art and Exhibits"},
-    {path: "event-category-details", icon: "book", title: "Books and Authors"},
-    {path: "event-category-details", icon: "happy", title: "Clubs and Organization"},
-    {path: "event-category-details", icon: "flag", title: "Fairs and Festivals"},
-    {path: "event-category-details", icon: "restaurant", title: "Food and Drink"},
-    {path: "event-category-details", icon: "people", title: "Kids and Families"},
-    {path: "event-category-details", icon: "cube", title: "Misc."},
-    {path: "event-category-details", icon: "film", title: "Movies"},
-    {path: "event-category-details", icon: "musical-note", title: "Music"}
+    {path: "event-category-details", icon: "color-palette", title: "Art and Exhibits", id: "ArtAndExhibits"},
+    {path: "event-category-details", icon: "book", title: "Books and Authors", id: "BooksAndAuthors"},
+    {path: "event-category-details", icon: "happy", title: "Clubs and Organizations", id: "ClubsAndOrganizations"},
+    {path: "event-category-details", icon: "flag", title: "Fairs and Festivals", id: "FairsAndFestivals"},
+    {path: "event-category-details", icon: "restaurant", title: "Food and Drink", id: "FoodAndDrink"},
+    {path: "event-category-details", icon: "people", title: "Kids and Families", id: "KidsAndFamilies"},
+    {path: "event-category-details", icon: "cube", title: "Misc.", id: "Misc"},
+    {path: "event-category-details", icon: "film", title: "Movies", id: "Movies"},
+    {path: "event-category-details", icon: "musical-note", title: "Music", id: "Music"}
   ];
 
-  private icons = [
-    'restaurant',
-    'film',
-    'musical-note',
-    'people',
-    'book',
-    'color-palette',
-    'cube',
-    'happy',
-    'flag'
-  ];
   public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
+  constructor(public router: Router) {
     for (let i = 0; i < this.data.length; i++) {
       this.items.push({
         title: this.data[i][2],
@@ -40,6 +31,11 @@ export class EventCategoriesPage implements OnInit {
         icon: this.data[i][1]
       });
     }
+  }
+
+  goCategoriesDetails(theCategory){
+    let url = './event-category-details/' + theCategory.id;
+    this.router.navigate([url]); 
   }
 
   ngOnInit() {

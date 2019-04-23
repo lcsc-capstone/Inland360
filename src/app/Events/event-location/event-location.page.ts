@@ -19,8 +19,6 @@ export class EventLocationPage implements OnInit {
   {
     this.ID = this.route.snapshot.paramMap.get("id");
     this.info = events.getEvent(this.ID);
-    console.log(this.info);
-    console.log("Complete.");
    }
 
   ngOnInit() {

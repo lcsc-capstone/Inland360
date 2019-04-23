@@ -9,10 +9,9 @@
 
 <ion-content padding>
     <ion-list>
-      <ion-item *ngFor="let item of data" [routerLink]= "'/' + item.path">
+      <ion-item *ngFor="let item of data" (click)="goCategoriesDetails(item)">
         <ion-icon [name]="item.icon" slot="start"></ion-icon>
         {{item.title}}
-        <!-- <ion-item [routerLink]="'/detail/' + item.id" routerDirection="forward"></ion-item> -->
         <div class="item-note" slot="end">
           {{item.note}}
         </div>
