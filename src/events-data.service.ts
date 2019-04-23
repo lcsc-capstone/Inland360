@@ -113,7 +113,8 @@ export class EventsDataService {
             },
             displayTime: item.fndisplay_time[0],
             sortTime: item.fnsort_time[0],
-            date: getDate(item.fndisplay_time[0], item.fnsort_time[0])
+            date: getDate(item.fndisplay_time[0], item.fnsort_time[0]),
+            image: item.fnimage[0]
           });
         }
         resolve(arr2); 

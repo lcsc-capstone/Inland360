@@ -10,6 +10,7 @@ export class EventData{
     sortTime: string;
     date: Date;
     category: string;
+    image: ImageBitmap;
 }
 
 export class EventLocation{
