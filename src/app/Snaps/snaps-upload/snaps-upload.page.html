@@ -5,32 +5,32 @@
     </ion-buttons>
     <ion-title>Upload a Photo</ion-title>
   </ion-toolbar>
+  <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
+  <ion-searchbar></ion-searchbar>
 </ion-header>
 
 <ion-content padding>
-    <ion-header>
-      <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
-      <ion-searchbar></ion-searchbar>
-    </ion-header>
-    <main>
+  <main>
 
-      <h1>Create Account</h1>
-      <p>(required for Share your Snaps)</p>
-      <button ion-button (click) = "createAccount()">create account</button> <br>
-      <h1>Upload</h1>
-      <ion-input type="text" name = "username" placeholder = "username or email" [(ngModel)]="login_username"></ion-input>
-      <ion-input type="password" name = "password" placeholder = "password" [(ngModel)]="login_password"></ion-input>
+    <h1>Create Account</h1>
+    <p>(required for Share your Snaps)</p>
+    <br>
+    <ion-button (click) = "createAccount()">Create Account</ion-button> <br>
+    <h1>Upload</h1>
+    <br>
+    <ion-input type="text" name = "username" placeholder = "Username or Email" [(ngModel)]="login_username"></ion-input>
+    <ion-input type="password" name = "password" placeholder = "Password" [(ngModel)]="login_password"></ion-input>
 
 <!--       <ion-input type="text" name = "image name" id = "image_name" placeholder = "image name" [(ngModel)]="image_name"></ion-input>
-      <ion-input type="text" name = "image description" id = "image_description" placeholder = "image description" [(ngModel)]="image_description"></ion-input>
-      <ion-input type="text" name = "contact email address" id = "contact_email" placeholder = "contact email" [(ngModel)]="contact_email"></ion-input>
-      <ion-input type="text" name = "contact number" id = "contact_number" placeholder = "contact phone" [(ngModel)]="contact_number"></ion-input>
- -->
-      <button ion-button (click) = "uploadMyPhoto()">go to photo upload</button> <br>
-      <div class = "insert"></div>
-    </main>
-    <ion-footer>
-      <p>2019 Moscow-Pullman Daily News and Lewiston Tribune. Terms of Service #</p>
-    </ion-footer>
+    <ion-input type="text" name = "image description" id = "image_description" placeholder = "image description" [(ngModel)]="image_description"></ion-input>
+    <ion-input type="text" name = "contact email address" id = "contact_email" placeholder = "contact email" [(ngModel)]="contact_email"></ion-input>
+    <ion-input type="text" name = "contact number" id = "contact_number" placeholder = "contact phone" [(ngModel)]="contact_number"></ion-input>
+-->
+    <ion-button (click) = "uploadMyPhoto()">Go to Photo Upload</ion-button> <br>
+  </main>
 
-  </ion-content>
+  <ion-footer>
+    <p>2019 Moscow-Pullman Daily News and Lewiston Tribune. Terms of Service #</p>
+  </ion-footer>
+
+</ion-content>
