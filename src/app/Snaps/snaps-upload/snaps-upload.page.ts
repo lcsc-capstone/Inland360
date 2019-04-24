@@ -40,7 +40,7 @@ export class SnapsUploadPage implements OnInit {
 
       createAccount(){
           var url = 'https://inland360.com/profile/login/';
-
+          this.spinnerDialog.show("","If you're not redirected soon, please try again.", false);
           let browser: InAppBrowserObject = this.inAppBrowser.create(url, '_blank', 'clearcache=yes,hidden=yes,hidenavigationbuttons=yes,hideurlbar=yes');
 
           browser.on('loadstop').subscribe( (ev: InAppBrowserEvent) => {
