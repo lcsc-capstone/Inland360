@@ -8,7 +8,6 @@ export class EventListPage implements OnInit {
   private selectedItem: any;
 
   private data = [
-    {path: "add-event", icon: "add", title: "Add Event"},
     {path: "event-home", icon: "paper", title: "Upcoming Events"},
     {path: "event-categories", icon: "apps", title: "Categories"}
     //{path: "", icon: "build", title: "Full Calendar"}
