@@ -67,11 +67,14 @@ ion-searchbar {
   --background: white !important;
 }
 #whole {
-   padding: 10px 0px 0px 0px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
- }
+  padding: 10px 0px 0px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.largeImg {
+  width: 100%;
+}
 .eventBar
 {
   background-color: #232323 !important;
@@ -96,6 +99,7 @@ ion-searchbar {
   width: 100%;
   align-content: center;
   //margin: auto;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 .eventImg
@@ -104,7 +108,7 @@ ion-searchbar {
   float: left;
 } 
 .eventName {
-  font-size: 1em;
+  //font-size: 1em;
   vertical-align: middle;
   //margin: auto;
   padding: auto;
