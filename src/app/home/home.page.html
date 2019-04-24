@@ -12,10 +12,10 @@
 
 <ion-content padding>
   <ion-list>
-      <ion-item *ngFor="let item of readingIn">
-        {{item}}
-      </ion-item>
-    </ion-list>
+    <ion-item *ngFor="let item of readingIn">
+      {{item}}
+    </ion-item>
+  </ion-list>
   <main>
     <h1><ion-item [routerLink]="'/event-home'" routerDirection="forward">Upcoming Events</ion-item></h1>
     <ion-slides pager="true" [options]="slideOpts">
@@ -34,29 +34,54 @@
         </ng-container>
       </ng-container>
     </ion-slides>   
-    <div>
-      <h2><ion-item [routerLink]="'/Snaps/snaps-upload'" routerDirection="forward">Add a Snap</ion-item></h2>
-      <ion-slides pager="true" [options]="slideOpts">
-        <ng-container *ngIf="items">
-          <ng-container *ngFor= "let item of eventsxmldata">
-            <ion-slide *ngIf="item.date >= todaysDate && weekOut >= item.date">
-              <div (click)=goEventDetails(item)>
-                <ion-img src="{{item.image}}" alt="main image placeholder" id="mainImg"></ion-img>
-                <h2>{{item.title}}</h2>
-                <p>{{item.location.name}}</p>
-                <p>{{item.sortTime}}</p>
-                <br>
-                <br>
-              </div>
-            </ion-slide>
-          </ng-container>
-        </ng-container>
-      </ion-slides> 
-    </div>
-    <div>
-      <ion-img src="https://s3.amazonaws.com/FringeBucket/image_placeholder.png" alt="main image placeholder" id ="mainImg"></ion-img>
-      <h2><ion-item [routerLink]="'/add-event'" routerDirection="forward">Add an Event</ion-item></h2>
-    </div>
+    <h1><ion-item>Shared Snaps</ion-item></h1>
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <div>
+          <ion-img src="../../assets/Day1Photo1.jpg" alt="image placeholder" id="mainImg"></ion-img>
+          <h2>Example Title</h2>
+          <p>Uploaded by Jane Doe</p>
+          <br>
+          <br>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <ion-img src="../../assets/kfA.jpg" alt="image placeholder" class="snapsImg"></ion-img>
+          <h2>Example Title</h2>
+          <p> Uploaded by John Doe</p>
+          <br>
+          <br>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <ion-img src="../../assets/eventB.jpg" alt="image placeholder" class="snapsImg"></ion-img>
+          <h2>Example Title</h2>
+          <p>Uploaded by Jane Doe</p>
+          <br>
+          <br>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <ion-img src="../../assets/Day3Photo1.jpg" alt="image placeholder" class="snapsImg"></ion-img>
+          <h2>Example Title</h2>
+          <p>Uploaded by John Doe</p>
+          <br>
+          <br>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <ion-img src="../../assets/eventA.jpg" alt="image placeholder" class="snapsImg"></ion-img>  
+          <h2>Example Title</h2>
+          <p>Uploaded by Jane Doe</p>
+          <br>
+          <br>
+        </div>
+      </ion-slide>
+    </ion-slides> 
   </main>
 
   <ion-footer>
