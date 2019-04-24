@@ -75,7 +75,6 @@ export class SnapsUploadPage implements OnInit {
                     document.getElementById("user_pass-" + number).value = "' + this.login_password + '"; \
                     document.querySelector(".userpro-button").click();'}).then( function(){
                        setTimeout(function(){
-                          document.querySelector('.insert').innerHTML = "<p>logged in successfully</p>";
                           browser.executeScript({code: 'document.querySelector(".the_menu_holder_area").click();'}).then( function(){
 
                              browser.executeScript({code: 'document.querySelector("nav > div > div > div > ul > li#menu-item-1047364 > a ").click();'}).then( function(){
@@ -96,8 +95,6 @@ export class SnapsUploadPage implements OnInit {
 
                                             browser.show();
                                               //browser.executeScript({code: 'document.querySelector("input#uig_submit").click();'});
-
-                                              document.querySelector('.insert').innerHTML = "<p>submitted photo successfully</p>";
                                         // });
 
                                        ;}, 2000);
