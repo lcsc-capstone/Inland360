@@ -31,8 +31,8 @@ export class EventInfoPage implements OnInit {
 
   async alert1(){
     const alert2 = await this.alert.create({
-      header: 'Confirm!',
-      message: 'Message <strong>text</strong>!!!',
+      header: '',
+      message: 'Are you sure you want to add this event to your calendar?',
       buttons: [
         {
           text: 'Cancel',
