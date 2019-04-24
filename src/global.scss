@@ -36,11 +36,11 @@ ion-header {
   }
 }
 ion-footer  {
-  margin: auto;
-  background-color:  #232323;
+  margin: 0 !important;
+  background-color: #232323;
   color: white;
-  width: 100%;
-  padding: 0%;
+  width: 100% !important;
+  padding: 0 !important;
   text-align: center;
   p {
     color: #9c9ea1;
@@ -142,7 +142,7 @@ ion-thumbnail {
 ion-input {
   background-color: #f2f2f2 !important;
   border: 1px solid #dddddd;
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 ion-checkbox {
   margin-right: 5px;
