@@ -41,7 +41,7 @@ export class SnapsUploadPage implements OnInit {
       createAccount(){
           var url = 'https://inland360.com/profile/login/';
 
-          let browser: InAppBrowserObject = this.inAppBrowser.create(url, '_self', 'clearcache=yes,hidden=yes,hidenavigationbuttons=yes,hideurlbar=yes');
+          let browser: InAppBrowserObject = this.inAppBrowser.create(url, '_blank', 'clearcache=yes,hidden=yes,hidenavigationbuttons=yes,hideurlbar=yes');
 
           browser.on('loadstop').subscribe( (ev: InAppBrowserEvent) => {
             browser.executeScript({code: 'document.querySelector("input.userpro-button.secondary.fullwidth-block").click();'}).then( function(){
@@ -60,14 +60,14 @@ export class SnapsUploadPage implements OnInit {
 
           var url = 'https://inland360.com/profile/login/';
 
-          let browser: InAppBrowserObject = this.inAppBrowser.create(url, '_self', 'clearcache=yes,hidden=yes,hidenavigationbuttons=no,hideurlbar=no');
+          let browser: InAppBrowserObject = this.inAppBrowser.create(url, '_blank', 'clearcache=yes,hidden=yes,hidenavigationbuttons=no,hideurlbar=no');
 
         this.spinnerDialog.show("","If you're not redirected soon, please try again.", false);
 
-        var image = (<HTMLInputElement>document.getElementById("image_name")).value;
-        var description = (<HTMLInputElement>document.getElementById("image_description")).value;
-        var email = (<HTMLInputElement>document.getElementById("contact_email")).value;
-        var number = (<HTMLInputElement>document.getElementById("contact_number")).value;
+//         var image = (<HTMLInputElement>document.getElementById("image_name")).value;
+//         var description = (<HTMLInputElement>document.getElementById("image_description")).value;
+//         var email = (<HTMLInputElement>document.getElementById("contact_email")).value;
+//         var number = (<HTMLInputElement>document.getElementById("contact_number")).value;
 
         browser.on('loadstop').subscribe( (ev: InAppBrowserEvent) => {
                     browser.executeScript({ code: 'var number = document.getElementById("unique_id").value;\
@@ -89,10 +89,10 @@ export class SnapsUploadPage implements OnInit {
                                         // browser.executeScript({ code: ' document.getElementById("uig_image_name").value = \"' + this.login_username + '\";  document.getElementById("uig_image_desc").value = "' + this.image_description + '"; document.getElementById("uig_contact_email").value = "' + this.contact_email + '";  document.getElementById("uig_contact_phone").value = "' + this.contact_number + '"; ' });
 
 
-                                         browser.executeScript({ code: ' document.getElementById("uig_image_name").value = "' + image + '"; ' });
-                                         browser.executeScript({ code: ' document.getElementById("uig_image_desc").value = "' + description + '"; ' });
-                                         browser.executeScript({ code: ' document.getElementById("uig_contact_email").value = "' + email + '"; ' });
-                                         browser.executeScript({ code: ' document.getElementById("uig_contact_phone").value = "' + number + '"; ' }).then( function(){
+//                                          browser.executeScript({ code: ' document.getElementById("uig_image_name").value = "' + image + '"; ' });
+//                                          browser.executeScript({ code: ' document.getElementById("uig_image_desc").value = "' + description + '"; ' });
+//                                          browser.executeScript({ code: ' document.getElementById("uig_contact_email").value = "' + email + '"; ' });
+//                                          browser.executeScript({ code: ' document.getElementById("uig_contact_phone").value = "' + number + '"; ' }).then( function(){
 
                                             browser.show();
                                               //browser.executeScript({code: 'document.querySelector("input#uig_submit").click();'});
