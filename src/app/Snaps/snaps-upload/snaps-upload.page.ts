@@ -98,7 +98,7 @@ export class SnapsUploadPage implements OnInit {
                                               //browser.executeScript({code: 'document.querySelector("input#uig_submit").click();'});
 
                                               document.querySelector('.insert').innerHTML = "<p>submitted photo successfully</p>";
-                                         });
+                                        // });
 
                                        ;}, 2000);
                                     });
