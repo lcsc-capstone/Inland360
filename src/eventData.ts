@@ -8,6 +8,7 @@ export class EventData{
     location: EventLocation;
     displayTime: string;
     sortTime: string;
+    sortDate: string;
     date: Date;
     category: string;
 }
