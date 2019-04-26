@@ -3,28 +3,26 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      Event Info
-    </ion-title>
+    <ion-title>Event Info</ion-title>
   </ion-toolbar>
   <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
 </ion-header>
 
 <ion-content padding>
     <main>
-      <div class="styleA">
-        <h2 class="date">{{info.displayTime}}</h2>
+      <div>
+        <h1 class="eventName">{{info.title}}</h1>
+        <h3 class="date">{{info.displayTime}}</h3>
   
         <div class="event">
-          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="eventImg"></ion-img>
+          <ion-img id="whole" src="../../assets/openMicNight.jpg" alt="image placeholder" class="largeImg"></ion-img>
         </div>
-          <h3 class="eventName">{{info.title}}</h3>
-          <p>{{info.description}}</p>
-          <p class="eventLocation" (click) = goEventLocation()>{{info.location.name}}</p>
-          <section class="eventDescription">
-            <p>{{info.description}}</p>
-          </section>
-          <p class="eventPrice">{{info.price}}</p>
+        <p>{{info.location.name}}</p>
+        <p class="venueAddrress venueApartment venueStreet venueCity venueState venueZip">
+          {{info.location.address}} {{info.location.addressSupplement}} {{info.location.city}}, {{info.location.state}} {{info.location.zip}}
+        </p>
+        <p>{{info.description}}</p>
+        <p class="eventPrice">{{info.price}}</p>
         <div class="event">
           <ion-button (click)="alert1()">Add to my Calendar</ion-button>
         </div>
@@ -32,6 +30,6 @@
     </main>
 
     <ion-footer>
-      <p>2019 Moscow-Pullman Daily News and Lewiston Tribune. Terms of Service #</p>
+      <p>2019 Moscow-Pullman Daily News and Lewiston Tribune. Terms of Service</p>
     </ion-footer>
 </ion-content>
