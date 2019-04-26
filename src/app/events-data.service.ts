@@ -77,7 +77,6 @@ export class EventsDataService {
       .then((data)=>
       {
         this.xmlItems = data;
-       // sortData(this.xmlItems);
       });
     }, (err) =>
     {
