@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EventsDataService } from '../events-data.service';
 
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -30,12 +31,14 @@ export class AppComponent {
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    public eventservice: EventsDataService
   ) {
     this.initializeApp();
   }
 
   initializeApp() {
+    this.eventservice.loadXML();
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();

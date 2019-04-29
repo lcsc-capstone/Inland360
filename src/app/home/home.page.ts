@@ -54,7 +54,7 @@ export class HomePage implements OnInit{
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
-    this.eventservice.loadXML();
+    //this.eventservice.loadXML();
     console.log("Start?");
     this.eventsxmldata = this.eventservice.xmlItems;
     console.log(this.eventsxmldata);
