@@ -3,12 +3,14 @@ import { EventsDataService} from './app/events-data.service';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { OnInit } from '@angular/core';
+import { delay } from 'q';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   public appPages = [
     {
       title: 'Home',
@@ -41,5 +43,17 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+  }
+
+  ngOnInit()
+  {
+    //this.eventservice.ngOnInit
+    this.eventservice.loadXML();
+    if ((this.eventservice.getXmlItems).length == 0)
+    {
+      delay(3000);
+      console.log("Alert!");
+    }
+    this.eventservice.loadXML();
   }
 }
