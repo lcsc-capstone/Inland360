@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
-
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { EventsDataService} from './events-data.service';
+import { delay } from 'q';
+import { OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   public appPages = [
     {
       title: 'Home',
@@ -30,7 +33,8 @@ export class AppComponent {
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private eventservice: EventsDataService
   ) {
     this.initializeApp();
   }
@@ -40,5 +44,17 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+  }
+
+  ngOnInit()
+  {
+    //this.eventservice.ngOnInit
+    this.eventservice.loadXML();
+    if ((this.eventservice.getXmlItems).length == 0)
+    {
+      delay(3000);
+      console.log("Alert!");
+    }
+    this.eventservice.loadXML();
   }
 }

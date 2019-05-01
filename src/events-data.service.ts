@@ -4,7 +4,7 @@ import { HttpHeaders } from '@angular/common/http';
 import * as xml2js from "xml2js";
 import { isBoolean, isString, isArray } from 'util';
 import { XSRF_HEADER_NAME } from '@angular/common/http/src/xsrf';
-
+import { OnInit } from '@angular/core'
 import { EventData } from './eventData';
 
 @Injectable({
@@ -12,7 +12,7 @@ import { EventData } from './eventData';
 
 })
 
-export class EventsDataService {
+export class EventsDataService  implements OnInit{
   public xmlItems: any;
 
   public getEvent(id: string)
@@ -122,6 +122,13 @@ export class EventsDataService {
     });
   }
   constructor(public http: HttpClient) { }
+
+  
+  public ngOnInit()
+  {
+    console.log("Loading service");
+    this.loadXML();
+  }
 }
 
 function getDate(displayTime: string, sortTime: string)

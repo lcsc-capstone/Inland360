@@ -3,7 +3,7 @@ import { EventsDataService } from '../events-data.service';
 import { EventData } from '../eventData';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
-
+import { delay } from 'q';
 
 @Component({
   selector: 'app-home',
@@ -54,7 +54,7 @@ export class HomePage implements OnInit{
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
-    this.eventservice.loadXML();
+    //this.eventservice.loadXML();
     console.log("Start?");
     this.eventsxmldata = this.eventservice.xmlItems;
     console.log(this.eventsxmldata);
@@ -82,13 +82,16 @@ export class HomePage implements OnInit{
       this.events = this.eventservice.getFilteredEventsTitle(queryString);
     }
   }
-
   ngOnInit() {
+    //this.eventservice.loadXML();
+    //this.eventservice.getXmlItems();
+    console.log("Testing...");
     this.eventservice.loadXML();
-    // this.eventservice.loadXML();
-    // console.log("Start?");
-    // this.eventsxmldata = this.eventservice.xmlItems;
-    // console.log(this.eventsxmldata);
+    var myData: any;
+    delay(30000);
+    console.log("Alert!");
+    myData = this.eventservice.getXmlItems();
+    console.log(myData);
   }
 
 }
