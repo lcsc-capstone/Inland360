@@ -123,15 +123,12 @@ export class EventsDataService {
             },
             displayTime: item.fndisplay_time[0],
             sortTime: item.fnsort_time[0],
-            sortDate: getSoringDate(item.fndisplay_time[0], item.fnsort_time[0]),
-            date: getDate(item.fndisplay_time[0], item.fnsort_time[0]),
+            //date: getDate(item.fndisplay_time[0], item.fnsort_time[0]),
+            shortDisplay: getShortDate(item.fndisplay_time[0]), //shortens the date
             category: item.fnevent_category[0].fncategory_name[0],
             //image: item.fnimage[0].fnurl[0]
           });
-          arr2.sort(function(a, b){return a.date.getTime()-b.date.getTime()});
         }
-          
-
         resolve(arr2); 
       });
     });
@@ -141,52 +138,25 @@ export class EventsDataService {
 
 function getDate(displayTime: string, sortTime: string)
 {
-  var sort = sortTime;
-  var display = displayTime;
-  var displaySplit = display.split(',');
-  var displaySplitSplit = displaySplit[1].split(" ");
-  var Month = displaySplitSplit[3].trim();
-  var numericalDay = displaySplitSplit[4].trim();
-  var year = displaySplit[2].trim();
-  var sortSplit = sort.split(":");
-  var sortSplitSplit = sortSplit[2].split(" ");
-  var Hour = sortSplit[0].trim();
-  var Minutes = sortSplit[1].trim();
-  var Seconds = sortSplitSplit[0].trim();
-  var newFormat = Month + " " + numericalDay + ", " + year + " " + Hour + ":" + Minutes + ":" + Seconds;
-  return new Date(newFormat);
+    var sort = sortTime;
+    var display = displayTime;
+    var displaySplit = display.split(',');
+    var displaySplitSplit = displaySplit[1].split(" ");
+    var Month = displaySplitSplit[3].trim();
+    var numericalDay = displaySplitSplit[4].trim();
+    var year = displaySplit[2].trim();
+    var sortSplit = sort.split(":");
+    var sortSplitSplit = sortSplit[2].split(" ");
+    var Hour = sortSplit[0].trim();
+    var Minutes = sortSplit[1].trim();
+    var Seconds = sortSplitSplit[0].trim();
+    var newFormat = Month + " " + numericalDay + ", " + year + " " + Hour + ":" + Minutes + ":" + Seconds;
+    return new Date(newFormat);
 }
 
-function getSoringDate(displayTime: string, sortTime: string)
+function getShortDate(displayTime: string)
 {
-  var sort = sortTime;
-  var display = displayTime;
-  var displaySplit = display.split(',');
-  var displaySplitSplit = displaySplit[1].split(" ");
-  var Month = displaySplitSplit[3].trim();
-  var numericalDay = displaySplitSplit[4].trim();
-  var year = displaySplit[2].trim();
-  var sortSplit = sort.split(":");
-  var sortSplitSplit = sortSplit[2].split(" ");
-  var Hour = sortSplit[0].trim();
-  var Minutes = sortSplit[1].trim();
-  var Seconds = sortSplitSplit[0].trim();
-  var newFormat = Month + " " + numericalDay + ", " +  year;
-  return newFormat;
+    var displaySplit = displayTime.split(',');
+    displaySplit.shift();
+    return displaySplit;
 }
-/*
-function sortData(ourData: Array<any>)
-{
-  for(var i = 0; i < ourData.length - 1; i++)
-  {
-    if(ourData[i].getDate.getTime > ourData[i+1].getDate.getTime())
-    {
-      var temp = ourData[i];
-      ourData[i] = ourData[i+1];
-      ourData[i+1] = temp;
-    }
-  }
-
-  //
-}
-*/
