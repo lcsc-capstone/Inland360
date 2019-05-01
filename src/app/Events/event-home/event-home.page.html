@@ -7,6 +7,11 @@
   </ion-toolbar>
   <ion-img id="whole" src="../../assets/inland-360-logo-small.png" alt="image placeholder"></ion-img>
   <ion-searchbar [(ngModel)]="searchQuery" (ionInput)="getEvents($event)" (ionClear)="resetList()"></ion-searchbar>
+  <nav>
+    <ul class="eventBar">
+      <li (click)="goCategories()">Categories</li>
+    </ul>
+  </nav>
 </ion-header>
 
 <ion-content padding>
@@ -18,7 +23,7 @@
             <ion-img src="../../assets/openMicNight.jpg" alt=""></ion-img>
           </ion-thumbnail>
           <ion-label class="infoLabel">
-            <p class="eventTime">{{item.displayTime}}</p>
+            <p class="eventTime">{{item.shortDisplay}}</p>
             <br>
             <h3 class="eventName">{{ item.title }}</h3>
             <p class="eventLocation">{{ item.location.name }}</p>
@@ -33,4 +38,3 @@
   </ion-footer>
   
 </ion-content>
-
